@@ -1,27 +1,36 @@
 @startuml
 package Model <<Folder>> {
-	class Game {
+	interface Game {
+		+createGame()
+		+gameLoop()
+		+saveToFile()
+		+loadFromFile()
+		+tourJoueur()
+		+tourOrdinateur()
 	}
+
+	class NewSimpleGame {
+	}
+	Game <-- NewSimpleGame : implements
+
+	class NewCustomGame {
+	}
+	Game <-- NewCustomGame : implements
 
 	package strategie <<Folder>> {
 		interface Strategie {
-			int[] doComputePosion()
+			int[] doComputePosition()
 		}
 
 		class Aleatoire {
-			+int[] doComputePosion()
+			int[] doComputePosition()
 		}
 		Strategie <-- Aleatoire : implements
 
-		class Difficile {
-			+int[] doComputePosion()
+		class Croix {
+			int[] doComputePosition()
 		}
 		Strategie <-- Difficile : implements
-
-		class MCTS_UCT {
-			+int[] doComputePosion()
-		}
-		Strategie <-- MCTS_UCT : implements
 	}
 
 	class Bot {
@@ -35,11 +44,6 @@ package Model <<Folder>> {
 		interface Bateau {
 			Bateau creerBateau(int nbCases, Epoque epoque)
 		}
-
-		enum Epoque {
-
-		}
-		Epoque <-- Bateau
 
 		class BateauDeuxCases {
 		}
@@ -60,13 +64,20 @@ package Model <<Folder>> {
 	}
 	bateauFactory <-- BateauFactory : creates
 
-	class PlateauJeu <<Serializable>> {
-		-{static}int largeur
-		-{static}int longueur
-		-int[][] plateauJoueur
-		-int[][] plateauBot
-		+PlateauJeu()
+	class Map <<Serializable>> {
+		-int nbCasesJoueur
+		-int nbCasesBot
+		-int[10][10] grilleJoueur
+		-int[10][10] grilleBot
+		-list bateauxJoueur
+		-list bateauxBot
+
+		+void verifierTouche (int x, int y)
+		+void infligerDegat (Bateau bateau)
+		+boolean verifierFinPartie ()
 	}
+	Map "-" - "1" Game
+	Map "-" - "*" Bateau
 
 	class FileManager <<Singleton>> {
 		-{static}FileManager instance
@@ -78,7 +89,6 @@ package Model <<Folder>> {
 	FileManager <-- FileManager : returns
 
 	FileManager <-- Game
-	PlateauJeu <-- Game
 	BateauFactory <-- Game
 	Bot <-- Game
 }
