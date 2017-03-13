@@ -1,5 +1,8 @@
 @startuml
 package Model <<Folder>> {
+	class Game {
+	}
+
 	package strategie <<Folder>> {
 		interface Strategie {
 			int[] doComputePosion()
@@ -30,14 +33,32 @@ package Model <<Folder>> {
 
 	package bateauFactory <<Folder>> {
 		interface Bateau {
-			Bateau creerBateau()
+			Bateau creerBateau(int nbCases, Epoque epoque)
 		}
+
+		enum Epoque {
+
+		}
+		Epoque <-- Bateau
+
+		class BateauDeuxCases {
+		}
+		Bateau <-- BateauDeuxCases : implements
+		class BateauTroisCases {
+		}
+		Bateau <-- BateauTroisCases : implements
+		class BateauQuatreCases {
+		}
+		Bateau <-- BateauQuatreCases : implements
+		class BateauCinqCases {
+		}
+		Bateau <-- BateauCinqCases : implements
 	}
 
 	class BateauFactory {
 		+Bateau creerBateau()
 	}
-	bateauFactory <-- BateauFactory : uses
+	bateauFactory <-- BateauFactory : creates
 
 	class PlateauJeu <<Serializable>> {
 		-{static}int largeur
@@ -47,12 +68,18 @@ package Model <<Folder>> {
 		+PlateauJeu()
 	}
 
-	class FileManager {
+	class FileManager <<Singleton>> {
 		-{static}FileManager instance
 		-FileManager()
 		+{static}FileManager getInstance()
-		~void saveToFile(String file)
-		~void loadFromFile(String file)
+		~void saveToFile(String file, PlateauJeu map)
+		~PlateauJeu loadFromFile(String file)
 	}
+	FileManager <-- FileManager : returns
+
+	FileManager <-- Game
+	PlateauJeu <-- Game
+	BateauFactory <-- Game
+	Bot <-- Game
 }
 @enduml
