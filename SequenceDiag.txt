@@ -1,0 +1,55 @@
+@startuml
+title Diagramme de sequence du lancement de la partie
+actor joueur
+
+joueur -> NewCustomeGame : 
+
+NewCustomeGame -> NewCustomeGame : createGame()
+
+create Map
+NewCustomeGame -> Map : << new Map() >>
+
+Map -> joueur : choix des bateaux
+
+joueur -> Map : reponse 
+
+Map -> BateauFactory : CreateBoat("reponse")
+
+BateauFactory -> BateauFactory : CreateBoat("reponse")
+
+BateauFactory -> Map : Liste Bateau Joueur
+
+
+Map -> BateauFactory : CreateBoat("ordinateur")
+
+BateauFactory -> BateauFactory : CreateBoat("ordinateur")
+
+BateauFactory -> Map : Liste Bateau ordinateur
+
+loop ListeBateauJoueur
+
+	loop verifPosition(int x, int y) est faux
+	
+		Map-> joueur :Demande nouvelles coordonnée
+		joueur -> Map : reponse 
+		
+	end
+
+	Map -> Map : Placement(x,y)
+end
+
+loop ListeBateauOrdinateur
+
+	loop verifPosition(int x, int y) est faux
+	
+		Map-> Map :Demande nouvelles coordonnée
+		Map -> Map : reponse 
+		
+	end
+
+	Map -> Map : Placement(x,y)
+end
+
+NewCustomeGame -> Map : GameLoop()
+
+@enduml
