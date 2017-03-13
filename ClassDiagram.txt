@@ -1,12 +1,6 @@
 @startuml
 package Model <<Folder>> {
-	class Bot {
-		-Strategie strategie
-		+Bot(Strategie strategie)
-		+int[] executeStrategie()
-	}
-
-	package Strategie <<Folder>> {
+	package strategie <<Folder>> {
 		interface Strategie {
 			int[] doComputePosion()
 		}
@@ -14,36 +8,44 @@ package Model <<Folder>> {
 		class Aleatoire {
 			+int[] doComputePosion()
 		}
-		Strategie <|.. Aleatoire
+		Strategie <-- Aleatoire : implements
 
 		class Difficile {
 			+int[] doComputePosion()
 		}
-		Strategie <|.. Difficile
+		Strategie <-- Difficile : implements
 
 		class MCTS_UCT {
 			+int[] doComputePosion()
 		}
-		Strategie <|.. MCTS_UCT
+		Strategie <-- MCTS_UCT : implements
 	}
+
+	class Bot {
+		-Strategie strategie
+		+Bot(Strategie strategie)
+		+int[] executeStrategie()
+	}
+	strategie <-- Bot : uses
+
+	package bateauFactory <<Folder>> {
+		interface Bateau {
+			Bateau creerBateau()
+		}
+	}
+
 	class BateauFactory {
 		+Bateau creerBateau()
 	}
+	bateauFactory <-- BateauFactory : uses
 
-	interface Bateau {
-		Bateau creerBateau()
-	}
-
-	class PlateauJeu {
+	class PlateauJeu <<Serializable>> {
 		-{static}int largeur
 		-{static}int longueur
 		-int[][] plateauJoueur
 		-int[][] plateauBot
 		+PlateauJeu()
 	}
-	class Serializable {
-	}
-	Serializable <|.. PlateauJeu
 
 	class FileManager {
 		-{static}FileManager instance
