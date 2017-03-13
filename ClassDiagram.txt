@@ -31,7 +31,7 @@ package Model <<Folder>> {
 		class Croix {
 			int[] doComputePosition()
 		}
-		Strategie <-- Difficile : implements
+		Strategie <-- Croix : implements
 	}
 
 	class Bot {
