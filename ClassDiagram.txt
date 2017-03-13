@@ -91,6 +91,6 @@ package Model <<Folder>> {
 
 	FileManager <-- Game
 	BateauFactory <-- Game
-	Bot <-- Game
+	Bot "1" - "-" Game
 }
 @enduml
