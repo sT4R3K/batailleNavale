@@ -1,0 +1,56 @@
+@startuml
+package Model <<Folder>> {
+	class Bot {
+		-Strategie strategie
+		+Bot(Strategie strategie)
+		+int[] executeStrategie()
+	}
+
+	package Strategie <<Folder>> {
+		interface Strategie {
+			int[] doComputePosion()
+		}
+
+		class Aleatoire {
+			+int[] doComputePosion()
+		}
+		Strategie <|.. Aleatoire
+
+		class Difficile {
+			+int[] doComputePosion()
+		}
+		Strategie <|.. Difficile
+
+		class MCTS_UCT {
+			+int[] doComputePosion()
+		}
+		Strategie <|.. MCTS_UCT
+	}
+	class BateauFactory {
+		+Bateau creerBateau()
+	}
+
+	interface Bateau {
+		Bateau creerBateau()
+	}
+
+	class PlateauJeu {
+		-{static}int largeur
+		-{static}int longueur
+		-int[][] plateauJoueur
+		-int[][] plateauBot
+		+PlateauJeu()
+	}
+	class Serializable {
+	}
+	Serializable <|.. PlateauJeu
+
+	class FileManager {
+		-{static}FileManager instance
+		-FileManager()
+		+{static}FileManager getInstance()
+		~void saveToFile(String file)
+		~void loadFromFile(String file)
+	}
+}
+@enduml
