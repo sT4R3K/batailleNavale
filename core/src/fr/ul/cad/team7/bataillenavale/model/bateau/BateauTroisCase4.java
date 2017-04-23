@@ -1,4 +1,5 @@
 package fr.ul.cad.team7.bataillenavale.model.bateau;
 
-public interface Bateau {
+public class BateauTroisCase4 implements Bateau {
+
 }
