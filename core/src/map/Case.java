@@ -31,9 +31,9 @@ public class Case implements Serializable {
 		// if (zone > boat.vie.length)
 		// return zone + "?";
 
-		// if (boat == null) {
-		// return -1 + "";
-		// }
+		if (boat == null) {
+			return -1 + "";
+		}
 		return boat.vie[Math.abs(zone)] + "";
 	}
 }

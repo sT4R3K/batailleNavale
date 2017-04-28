@@ -31,9 +31,11 @@ public class Battle extends Entity {
 	int bordl = Factory.bordureLR();
 	int bordh = Factory.bordureTB();
 
+	int tmp = 0;
+	int pos = 0;
+
 	Button butt = new Button();
 	Souris sou;
-	// boolean dir = true;
 
 	Sprite[][] sprite;
 	Sprite[][] spriteBot;
@@ -45,15 +47,9 @@ public class Battle extends Entity {
 	void maj() {
 		larg = Factory.largeur();
 		haut = Factory.hauteur();
-
 		bordl = Factory.bordureLR();
 		bordh = Factory.bordureTB();
-		// stage.act();
-		// System.out.println(stage.getActors());
-		// stage.getActors().first().;
 	}
-
-	int tmp = 0;
 
 	public boolean delay() {
 		if (tmp > 0) {
@@ -64,33 +60,19 @@ public class Battle extends Entity {
 	}
 
 	public void hud() {
-
-		
-		
 		vp.update(Factory.width(), Factory.height(), true);
 		stage.setViewport(vp);
-		// tir.setOrigin(0, 0);
 		tir.setPosition(stage.getWidth() / 2, stage.getHeight() / 2);
 		tir.setSize(Factory.largeur(), Factory.hauteur());
-		// tir.toFront();
-		// tir.setVisible(true);
-		// System.out.println(tir.getX() + " " + tir.getY());
-		// tir.setPosition(Factory.largeur() * 3, (Factory.height()) -
-		// Factory.hauteur());
-		// tir.setSize(Factory.largeur() * 2, Factory.hauteur());
-		// tir.addListener(new feu());
 		batch.end();
 		stage.draw();
 		batch.begin();
-
 	}
 
-	int pos = 0;
-
 	void recouvrement(Sprite spr, int x, int y, boolean sens) {
-		if (map.joueur.size() > pos) {
-			map.put = new Case(map.joueur.get(pos), 0, false);
-			for (int i = 0; i < map.put.boat.vie.length; i++) {
+		if (gear.map.joueur.size() > pos) {
+			gear.map.put = new Case(gear.map.joueur.get(pos), 0, false);
+			for (int i = 0; i < gear.map.put.boat.vie.length; i++) {
 				if (spr.getBoundingRectangle().overlaps(Souris.curseur)) {
 					Sprite s = new Sprite(Factory.vert);
 					s.setOrigin(spr.getOriginX(), spr.getOriginY());
@@ -100,11 +82,12 @@ public class Battle extends Entity {
 						s.setPosition(spr.getX(), spr.getY() + (i * Factory.hauteur()));
 					}
 					if (Gdx.input.isTouched()) {
-						Souris.err = map.placement(x, y, !sens, map.put.boat, !false);
+						Souris.err = gear.map.placement(x, y, !sens, gear.map.put.boat, !false);
 						int err = Souris.err;
 						if (err != 0) {
-							Factory.font.draw(batch, map.err(err), Factory.width() / 2,
-									Factory.height() - Factory.hauteur());
+							// Factory.font.draw(batch, gear.map.err(err),
+							// Factory.width() / 2,
+							// Factory.height() - Factory.hauteur());
 						}
 					}
 					s.setSize(spr.getWidth(), spr.getHeight());
@@ -117,8 +100,8 @@ public class Battle extends Entity {
 	public void instal() {
 		for (int x = 0; x < 10; x++)
 			for (int y = 0; y < 10; y++) {
-				recouvrement(sprite[x][y], x, y, map.sens);
-				if (map.joueur.size() == 0) {
+				recouvrement(sprite[x][y], x, y, gear.map.sens);
+				if (gear.map.joueur.size() == 0) {
 					gear.placement = false;
 				}
 			}
@@ -127,21 +110,21 @@ public class Battle extends Entity {
 	void souris() {
 		for (int x = 0; x < 10; x++)
 			for (int y = 0; y < 10; y++) {
-				recouvrement(sprite[x][y], x, y, map.sens);
+				recouvrement(sprite[x][y], x, y, gear.map.sens);
 				if (sprite[x][y].getBoundingRectangle().overlaps(Souris.curseur)) {
 					if (Gdx.input.isTouched(0)) {
-						if (map.selection != null)
-							map.selection.selected = false;
-						map.selection = map.grilleJoueur[x][y];
-						map.selection.selected = true;
+						if (gear.map.selection != null)
+							gear.map.selection.selected = false;
+						gear.map.selection = gear.map.grilleJoueur[x][y];
+						gear.map.selection.selected = true;
 					}
 				}
 				if (spriteBot[x][y].getBoundingRectangle().overlaps(Souris.curseur)) {
 					if (Gdx.input.isTouched(0)) {
-						if (map.selection != null)
-							map.selection.selected = false;
-						map.selection = map.grilleBot[x][y];
-						map.selection.selected = true;
+						if (gear.map.selection != null)
+							gear.map.selection.selected = false;
+						gear.map.selection = gear.map.grilleBot[x][y];
+						gear.map.selection.selected = true;
 					}
 				}
 			}
@@ -161,17 +144,13 @@ public class Battle extends Entity {
 				box[x][y] = new Rectangle();
 			}
 		sou = new Souris(sb, stage, vp, game, camera);
-
 		tir = new TextButton("Boom !", Factory.skin);
 		tir.setOrigin(0, 0);
 		tir.setPosition(Factory.largeur() * 3, (Factory.height()) - Factory.hauteur());
 		tir.setSize(Factory.largeur() * 2, Factory.hauteur());
 		stage.addActor(tir);
 		tir.addListener(new feu());
-
 		Gdx.input.setInputProcessor(stage);
-
-		// Gdx.input.setInputProcessor(stage);
 	}
 
 	public void sup(ArrayList<Sprite> spr, int x, int y) {
@@ -197,8 +176,8 @@ public class Battle extends Entity {
 
 	public void selection() {
 		Factory.font.setColor(Color.RED);
-		if (map.selection != null) {
-			Factory.font.draw(batch, map.selection.zone + "", Factory.width() / 2, Factory.height() / 2);
+		if (gear.map.selection != null) {
+			Factory.font.draw(batch, gear.map.selection.zone + "", Factory.width() / 2, Factory.height() / 2);
 		} else {
 			Factory.font.draw(batch, "choississez une case", Factory.width() / 2, Factory.height() / 2);
 		}
@@ -207,7 +186,7 @@ public class Battle extends Entity {
 	public void placement() {
 		int pos = 0;
 		int pol = 0;
-		for (Boat e : map.joueur) {
+		for (Boat e : gear.map.joueur) {
 			pos = 0;
 			for (int i = 0; i < e.vie.length; i++) {
 				Case c = new Case(e, 0, false);
@@ -230,14 +209,14 @@ public class Battle extends Entity {
 		maj();
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 10; j++) {
-				if (map.grilleJoueur[i][j] != null)
-					map.grilleJoueur[i][j].reveal = true;
-				sup(Factory.bateau(map.grilleJoueur[i][j]), i, j);
+				if (gear.map.grilleJoueur[i][j] != null)
+					gear.map.grilleJoueur[i][j].reveal = true;
+				sup(Factory.bateau(gear.map.grilleJoueur[i][j]), i, j);
 			}
 		}
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 10; j++) {
-				supp(Factory.bateau(map.grilleBot[i][j]), i, j);
+				supp(Factory.bateau(gear.map.grilleBot[i][j]), i, j);
 			}
 		}
 		souris();
@@ -247,16 +226,14 @@ public class Battle extends Entity {
 		maj();
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 10; j++) {
-
-				if (map.grilleJoueur[i][j] != null)
-					map.grilleJoueur[i][j].reveal = true;
-
-				sup(Factory.bateau(map.grilleJoueur[i][j]), i, j);
+				if (gear.map.grilleJoueur[i][j] != null)
+					gear.map.grilleJoueur[i][j].reveal = true;
+				sup(Factory.bateau(gear.map.grilleJoueur[i][j]), i, j);
 			}
 		}
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 10; j++) {
-				supp(Factory.bateau(map.grilleBot[i][j]), i, j);
+				supp(Factory.bateau(gear.map.grilleBot[i][j]), i, j);
 			}
 		}
 	}
@@ -265,14 +242,14 @@ public class Battle extends Entity {
 		maj();
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 10; j++) {
-				if (map.grilleJoueur[i][j] != null)
-					map.grilleJoueur[i][j].reveal = true;
-				sup(Factory.bateau(map.grilleJoueur[i][j]), i, j);
+				if (gear.map.grilleJoueur[i][j] != null)
+					gear.map.grilleJoueur[i][j].reveal = true;
+				sup(Factory.bateau(gear.map.grilleJoueur[i][j]), i, j);
 			}
 		}
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 10; j++) {
-				supp(Factory.bateau(map.grilleBot[i][j]), i, j);
+				supp(Factory.bateau(gear.map.grilleBot[i][j]), i, j);
 			}
 		}
 		instal();
@@ -281,16 +258,12 @@ public class Battle extends Entity {
 
 	@Override
 	public void render() {
-		// TODO Auto-generated method stub
-
 		vp.update(Factory.width(), Factory.height());
-		// Gdx.input.setInputProcessor(stage);
 		if (!gear.placement) {
 			hud();
-			if (map.tourJoueur) {
+			if (gear.map.tourJoueur) {
 				this.joueur();
 				Gdx.input.setInputProcessor(stage);
-				// this.hud();
 			} else {
 				gear.tourOrdinateur();
 				this.ordi();
@@ -298,16 +271,14 @@ public class Battle extends Entity {
 		} else {
 			this.installation();
 		}
-		// Gdx.input.setInputProcessor(stage);
+		load();
 	}
 
 	@Override
 	public void dispose() {
 		batch.dispose();
 		stage.dispose();
-
 		sou.dispose();
-		// img.dispose();
 	}
 
 	public class feu extends ClickListener {
@@ -315,9 +286,9 @@ public class Battle extends Entity {
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
 
-			if (map.selection != null) {
-				map.infligerDegat(map.selection);
-				map.tourJoueur = false;
+			if (gear.map.selection != null) {
+				gear.map.infligerDegat(gear.map.selection);
+				gear.map.tourJoueur = false;
 			}
 		}
 	};

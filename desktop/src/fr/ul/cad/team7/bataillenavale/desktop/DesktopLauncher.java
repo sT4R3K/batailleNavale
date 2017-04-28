@@ -5,7 +5,7 @@ import java.io.Serializable;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 
-import fr.ul.cad.team7.bataillenavale.Menu;
+import fr.ul.cad.team7.bataillenavale.Start;
 
 public class DesktopLauncher implements Serializable {
 
@@ -18,7 +18,7 @@ public class DesktopLauncher implements Serializable {
 
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		// new LwjglApplication(new BatailleNavale(), config);
-		new LwjglApplication(new Menu(), config);
+		new LwjglApplication(new Start(), config);
 
 		// Game g = new SimpleGame();
 
