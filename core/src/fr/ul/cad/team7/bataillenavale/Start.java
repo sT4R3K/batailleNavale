@@ -102,6 +102,8 @@ public class Start extends ApplicationAdapter {
 			posBB(b);
 		}
 		aidePositionnement = 1;
+		
+		Factory.font.getData().setScale(Factory.width()/500);
 
 	}
 
@@ -155,6 +157,11 @@ public class Start extends ApplicationAdapter {
 		maj();
 		interaction();
 		batch.begin();
+
+		// Factory.font.draw(batch, "vbsuiro", Factory.width()/2,
+		// Factory.height()/2);
+		// System.out.println(Factory.font.getData().scaleX+"
+		// "+Factory.font.getData().scaleY);
 		switch (cas) {
 		case 1:
 			cas(reprendre, sauvegarde, chargement, exitGame, quitter);
