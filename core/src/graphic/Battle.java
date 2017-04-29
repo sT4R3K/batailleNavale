@@ -39,11 +39,13 @@ public class Battle extends Entity {
 
 	Sprite[][] sprite;
 	Sprite[][] spriteBot;
+	ArrayList<Sprite> tuto;
 	Rectangle[][] box;
 
 	TextButton tir;
-	TextButton perso;
+	TextButton sens;
 
+	// gear.map.sens = !gear.map.sens;
 	void maj() {
 		larg = Factory.largeur();
 		haut = Factory.hauteur();
@@ -60,10 +62,24 @@ public class Battle extends Entity {
 	}
 
 	public void hud() {
+		sens.setVisible(false);
+		tir.setVisible(true);
 		vp.update(Factory.width(), Factory.height(), true);
 		stage.setViewport(vp);
 		tir.setPosition(stage.getWidth() / 2, stage.getHeight() / 2);
-		tir.setSize(Factory.largeur(), Factory.hauteur());
+		tir.setSize((Factory.largeur() / 2) * tir.getText().toString().length(), Factory.hauteur());
+		batch.end();
+		stage.draw();
+		batch.begin();
+	}
+
+	public void hud2() {
+		tir.setVisible(false);
+		sens.setVisible(true);
+		vp.update(Factory.width(), Factory.height(), true);
+		stage.setViewport(vp);
+		sens.setPosition(stage.getWidth() / 2, stage.getHeight() / 2);
+		sens.setSize((Factory.largeur() / 2) * tir.getText().toString().length(), Factory.hauteur());
 		batch.end();
 		stage.draw();
 		batch.begin();
@@ -85,9 +101,6 @@ public class Battle extends Entity {
 						Souris.err = gear.map.placement(x, y, !sens, gear.map.put.boat, !false);
 						int err = Souris.err;
 						if (err != 0) {
-							// Factory.font.draw(batch, gear.map.err(err),
-							// Factory.width() / 2,
-							// Factory.height() - Factory.hauteur());
 						}
 					}
 					s.setSize(spr.getWidth(), spr.getHeight());
@@ -145,12 +158,25 @@ public class Battle extends Entity {
 			}
 		sou = new Souris(sb, stage, vp, game, camera);
 		tir = new TextButton("Boom !", Factory.skin);
+		sens = new TextButton("Sens Bateau", Factory.skin);
 		tir.setOrigin(0, 0);
+		sens.setOrigin(0, 0);
 		tir.setPosition(Factory.largeur() * 3, (Factory.height()) - Factory.hauteur());
-		tir.setSize(Factory.largeur() * 2, Factory.hauteur());
+		sens.setPosition(Factory.largeur() * 3, (Factory.height()) - Factory.hauteur());
+		tir.setSize((Factory.largeur() / 2) * tir.getText().toString().length(), Factory.hauteur());
 		stage.addActor(tir);
+		stage.addActor(sens);
 		tir.addListener(new feu());
+		sens.addListener(new sens());
 		Gdx.input.setInputProcessor(stage);
+		creerTuto();
+	}
+
+	void creerTuto() {
+		tuto = new ArrayList<Sprite>();
+		tuto.add(Factory.brouillard);
+		tuto.add(new Sprite(Factory.blue));
+		tuto.add(new Sprite(Factory.barre));
 	}
 
 	public void sup(ArrayList<Sprite> spr, int x, int y) {
@@ -256,8 +282,13 @@ public class Battle extends Entity {
 		placement();
 	}
 
+	public void tuto() {
+
+	}
+
 	@Override
 	public void render() {
+		tuto();
 		vp.update(Factory.width(), Factory.height());
 		if (!gear.placement) {
 			hud();
@@ -270,6 +301,7 @@ public class Battle extends Entity {
 			}
 		} else {
 			this.installation();
+			hud2();
 		}
 		load();
 	}
@@ -281,6 +313,8 @@ public class Battle extends Entity {
 		sou.dispose();
 	}
 
+	// gear.map.sens = !gear.map.sens;
+
 	public class feu extends ClickListener {
 
 		@Override
@@ -290,6 +324,15 @@ public class Battle extends Entity {
 				gear.map.infligerDegat(gear.map.selection);
 				gear.map.tourJoueur = false;
 			}
+		}
+	};
+
+	public class sens extends ClickListener {
+
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+
+			gear.map.sens = !gear.map.sens;
 		}
 	};
 }
