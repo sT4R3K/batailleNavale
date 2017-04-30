@@ -13,6 +13,7 @@ public class Case implements Serializable {
 	public boolean plouf = false;
 	public boolean sens;
 	public boolean selected = false;
+	public boolean touche = false;
 
 	public Case(Boat b, int n, boolean s) {
 		boat = b;

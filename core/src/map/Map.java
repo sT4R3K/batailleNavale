@@ -154,6 +154,7 @@ public class Map implements Serializable {
 
 		if (c.boat != null) {
 			c.reveal = true;
+			c.touche = true;
 			if (c.boat.vie[Math.abs(c.zone)] > 0) {
 				c.boat.hit(Math.abs(c.zone));
 			}

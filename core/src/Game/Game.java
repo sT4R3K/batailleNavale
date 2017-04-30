@@ -7,6 +7,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
 import fr.ul.cad.team7.bataillenavale.model.Bot;
 import fr.ul.cad.team7.bataillenavale.model.strategie.Aleatoire;
+import fr.ul.cad.team7.bataillenavale.model.strategie.Croix;
 import map.Case;
 import map.Current;
 import map.Map;
@@ -18,7 +19,7 @@ public abstract class Game implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	public Map map;
-	Bot bot = new Bot(new Aleatoire());
+	Bot bot = new Bot(new Croix());
 	public boolean placement = true;
 
 	public static int tour = 0;
