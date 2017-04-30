@@ -41,6 +41,17 @@ public class BatailleNavale extends ApplicationAdapter {
 		monde = new Battle(batch, stage, vp, gear, camera);
 		souris = new Souris(batch, stage, vp, gear, camera);
 	}
+	
+	public void createPerso() {
+		gear = new SimpleGame();
+		batch = new SpriteBatch();
+		map = gear.map;
+		camera = new OrthographicCamera(Factory.width(), Factory.height());
+		vp = new ScreenViewport();
+		stage = new Stage();
+		monde = new Battle(batch, stage, vp, gear, camera);
+		souris = new Souris(batch, stage, vp, gear, camera);
+	}
 
 	@Override
 	public void render() {

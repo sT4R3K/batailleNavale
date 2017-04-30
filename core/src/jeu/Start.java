@@ -47,15 +47,6 @@ public class Start extends ApplicationAdapter {
 
 	int cas = -1;
 
-	// public enum Status {
-	// lancement(0), pause(1), partie(2), sauvegarde(3), menu(4), chargement(5);
-	// private int cas = 0;
-	//
-	// Status(int i) {
-	// this.cas = i;
-	// }
-	// }
-
 	@Override
 	public void create() {
 		alt = new ArrayList<TextButton>();
@@ -65,7 +56,7 @@ public class Start extends ApplicationAdapter {
 		stage = new Stage(vp, batch);
 
 		rapide = bouton(new normal(), "Partie Rapide");
-		perso = bouton(new normal(), "Partie Perso");
+		perso = bouton(new perso(), "Partie Perso");
 		reprendre = bouton(new normal(), "Reprendre");
 		sauvegarde = bouton(new save(), "Sauvegarder");
 		chargement = bouton(new charger(), "Charger");
@@ -74,7 +65,7 @@ public class Start extends ApplicationAdapter {
 		field.setOrigin(0, 0);
 		stage.addActor(field);
 		validerSave = bouton(new saveVal(), "Sauvegarder la partie");
-		retour = bouton(new normal(), "Retour");
+		retour = bouton(new retour(), "Retour");
 		exitGame = bouton(new quitterGame(), "Quitter la partie");
 		quitter = bouton(new quitter(), "Quitter");
 
@@ -102,8 +93,8 @@ public class Start extends ApplicationAdapter {
 			posBB(b);
 		}
 		aidePositionnement = 1;
-		
-		Factory.font.getData().setScale(Factory.width()/500);
+
+		Factory.font.getData().setScale(Factory.width() / 500);
 
 	}
 
@@ -131,7 +122,6 @@ public class Start extends ApplicationAdapter {
 	}
 
 	public void cas(Button... T) {
-		// field.setVisible(false);
 		hide();
 		visible(T);
 		batch.end();
@@ -157,11 +147,6 @@ public class Start extends ApplicationAdapter {
 		maj();
 		interaction();
 		batch.begin();
-
-		// Factory.font.draw(batch, "vbsuiro", Factory.width()/2,
-		// Factory.height()/2);
-		// System.out.println(Factory.font.getData().scaleX+"
-		// "+Factory.font.getData().scaleY);
 		switch (cas) {
 		case 1:
 			cas(reprendre, sauvegarde, chargement, exitGame, quitter);
@@ -280,7 +265,7 @@ public class Start extends ApplicationAdapter {
 
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
-			System.exit(0);
+			cas = 0;
 		}
 	};
 
@@ -297,9 +282,12 @@ public class Start extends ApplicationAdapter {
 
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
-			app = new BatailleNavale();
-			app.create();
-
+			System.out.println("bidule");
+			if (app == null) {
+				app = new BatailleNavale();
+				app.createPerso();
+			}
+			cas = 2;
 		}
 	};
 
@@ -310,7 +298,6 @@ public class Start extends ApplicationAdapter {
 			hide();
 			cas = 4;
 			field.getText().toString();
-			// System.out.println(field.getText().toString());
 			File repertoire = new File("sauvegarde");
 			String[] listefichiers;
 
@@ -362,7 +349,6 @@ public class Start extends ApplicationAdapter {
 				but.addListener(new ClickListener() {
 					public void clicked(InputEvent event, float x, float y) {
 						but.getText();
-						// System.out.println(but.getText());
 						app = new BatailleNavale();
 						app.create();
 						app.gear.map = SaveManager.loadFromFile(but.getText().toString()).map;
