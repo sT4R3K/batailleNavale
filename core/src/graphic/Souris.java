@@ -14,11 +14,11 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
-import Game.Game;
-import Game.SaveManager;
-import fr.ul.cad.team7.bataillenavale.BatailleNavale;
-import fr.ul.cad.team7.bataillenavale.Start;
+import gestionSauvegarde.Game;
+import gestionSauvegarde.SaveManager;
 import graphic.factory.Factory;
+import jeu.BatailleNavale;
+import jeu.Start;
 
 public class Souris extends Entity {
 

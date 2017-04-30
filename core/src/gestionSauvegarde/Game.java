@@ -1,13 +1,13 @@
-package Game;
+package gestionSauvegarde;
 
 import java.io.Serializable;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
-import fr.ul.cad.team7.bataillenavale.model.Bot;
-import fr.ul.cad.team7.bataillenavale.model.strategie.Aleatoire;
-import fr.ul.cad.team7.bataillenavale.model.strategie.Croix;
+import IA.Aleatoire;
+import IA.Bot;
+import IA.Croix;
 import map.Case;
 import map.Current;
 import map.Map;

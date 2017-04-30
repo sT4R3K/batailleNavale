@@ -1,4 +1,4 @@
-package Game;
+package gestionSauvegarde;
 
 import java.io.Serializable;
 import java.util.ArrayList;

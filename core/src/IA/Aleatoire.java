@@ -1,4 +1,4 @@
-package fr.ul.cad.team7.bataillenavale.model.strategie;
+package IA;
 
 import java.io.Serializable;
 
@@ -27,7 +27,7 @@ public class Aleatoire implements Strategie, Serializable {
 		Case c = map.grilleJoueur[x][y];
 
 		while (true) {
-			if (c.reveal == false) {
+			if (c.touche == false) {
 				break;
 			}
 			x = (int) (Math.random() * 10);
@@ -35,10 +35,10 @@ public class Aleatoire implements Strategie, Serializable {
 			// if (map.verifierTouche(x, y, true)) {
 			c = map.grilleJoueur[x][y];
 			tour ++;
-			if(tour>1000){
-				tour = 0 ;
-				break;
-			}
+//			if(tour>1000){
+//				tour = 0 ;
+//				break;
+//			}
 				
 		}
 

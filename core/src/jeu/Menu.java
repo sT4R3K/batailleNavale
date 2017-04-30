@@ -1,4 +1,4 @@
-package fr.ul.cad.team7.bataillenavale;
+package jeu;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;

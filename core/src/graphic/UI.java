@@ -6,7 +6,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
-import Game.Game;
+import gestionSauvegarde.Game;
 
 public class UI extends Entity {
 

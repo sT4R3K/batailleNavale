@@ -1,4 +1,4 @@
-package fr.ul.cad.team7.bataillenavale.model;
+package gestionSauvegarde;
 
 
 public class FileManager {

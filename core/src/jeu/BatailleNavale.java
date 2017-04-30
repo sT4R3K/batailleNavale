@@ -1,4 +1,4 @@
-package fr.ul.cad.team7.bataillenavale;
+package jeu;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -9,8 +9,8 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
-import Game.Game;
-import Game.SimpleGame;
+import gestionSauvegarde.Game;
+import gestionSauvegarde.SimpleGame;
 import graphic.Battle;
 import graphic.Entity;
 import graphic.Souris;

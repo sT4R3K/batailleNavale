@@ -1,4 +1,4 @@
-package fr.ul.cad.team7.bataillenavale.model.strategie;
+package IA;
 
 import java.io.Serializable;
 

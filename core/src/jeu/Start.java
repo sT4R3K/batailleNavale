@@ -1,4 +1,4 @@
-package fr.ul.cad.team7.bataillenavale;
+package jeu;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextField;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 
-import Game.SaveManager;
+import gestionSauvegarde.SaveManager;
 import graphic.Clavier;
 import graphic.factory.Factory;
 

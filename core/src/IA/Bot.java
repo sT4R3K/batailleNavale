@@ -1,8 +1,7 @@
-package fr.ul.cad.team7.bataillenavale.model;
+package IA;
 
 import java.io.Serializable;
 
-import fr.ul.cad.team7.bataillenavale.model.strategie.Strategie;
 import map.Map;
 
 public class Bot implements Serializable{
