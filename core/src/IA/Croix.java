@@ -18,7 +18,6 @@ public class Croix implements Strategie, Serializable {
 		return null;
 	}
 
-	int tour = 0 ;
 	@Override
 	public void degat(Map m) {
 		Map map = m;
@@ -26,23 +25,33 @@ public class Croix implements Strategie, Serializable {
 		boolean selected = false;
 		
 		// Choisir une case voisine à une case déjà coulée
-		for (int i = 0; i < 10 && !selected; i++)
-			for (int j = 0; j < 10 && !selected; j++) {
+		double r = Math.random();
+		boolean left_to_right = (r<0.5)?true:false;
+		r = Math.random();
+		boolean bottom_to_top = (r<0.5)?true:false;
+		
+		for (int i = (left_to_right)?0:9; (left_to_right?(i<10):(i>0)) && !selected; i+=(left_to_right?1:-1))
+			for (int j = (bottom_to_top)?0:9; (bottom_to_top?(j<10):(j>0)) && !selected; j+=(bottom_to_top?1:-1)) {
+				r = Math.random ();
+				int Di = (r<0.5)?1:-1;
+				r = Math.random();
+				int Dj = (r<0.5)?1:-1;
+				
 				if (map.grilleJoueur[i][j].touche) {
-					if (i>0 && !map.grilleJoueur[i-1][j].touche && !map.grilleJoueur[i-1][j].plouf) {
-						c = map.grilleJoueur[i-1][j];
+					if (((Di>0 && i>0)||(Di<0 && i<9)) && !map.grilleJoueur[i-Di][j].touche && !map.grilleJoueur[i-Di][j].plouf) {
+						c = map.grilleJoueur[i-Di][j];
 						selected = true;
 					}
-					else if (i<9 && !map.grilleJoueur[i+1][j].touche && !map.grilleJoueur[i+1][j].plouf) {
-						c = map.grilleJoueur[i+1][j];
+					else if (((Di>0 && i<9)||(Di<0 && i>0)) && !map.grilleJoueur[i+Di][j].touche && !map.grilleJoueur[i+Di][j].plouf) {
+						c = map.grilleJoueur[i+Di][j];
 						selected = true;
 					}
-					else if (j>0 && !map.grilleJoueur[i][j-1].touche && !map.grilleJoueur[i][j-1].plouf) {
-						c = map.grilleJoueur[i][j-1];
+					else if (((Dj>0 && j>0)||(Dj<0 && j<9)) && !map.grilleJoueur[i][j-Dj].touche && !map.grilleJoueur[i][j-Dj].plouf) {
+						c = map.grilleJoueur[i][j-Dj];
 						selected = true;
 					}
-					else if (j<9 && !map.grilleJoueur[i][j+1].touche && !map.grilleJoueur[i][j+1].plouf) {
-						c = map.grilleJoueur[i][j+1];
+					else if (((Dj>0 && j<9)||(Dj<0 && j>0)) && !map.grilleJoueur[i][j+Dj].touche && !map.grilleJoueur[i][j+Dj].plouf) {
+						c = map.grilleJoueur[i][j+Dj];
 						selected = true;
 					}
 				}
@@ -53,8 +62,16 @@ public class Croix implements Strategie, Serializable {
 			int x = (int) (Math.random() * 10);
 			int y = (int) (Math.random() * 10);
 			c = map.grilleJoueur[x][y];
-		}
 			
+			while(true) {
+				if (!c.touche && !c.plouf)
+					break;
+				x = (int) (Math.random() * 10);
+				y = (int) (Math.random() * 10);
+				c = map.grilleJoueur[x][y];
+			}
+		}
+		
 		map.infligerDegat(c);
 		
 	}

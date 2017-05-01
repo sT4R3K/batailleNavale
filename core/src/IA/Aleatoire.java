@@ -27,7 +27,7 @@ public class Aleatoire implements Strategie, Serializable {
 		Case c = map.grilleJoueur[x][y];
 
 		while (true) {
-			if (c.touche == false) {
+			if (c.touche == false && c.plouf == false) {
 				break;
 			}
 			x = (int) (Math.random() * 10);
