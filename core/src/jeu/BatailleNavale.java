@@ -9,7 +9,6 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
-import gestionSauvegarde.Game;
 import gestionSauvegarde.SimpleGame;
 import graphic.Battle;
 import graphic.Entity;

@@ -3,6 +3,7 @@ package gestionSauvegarde;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+import jeu.Game;
 import map.Boat;
 import map.Old;
 

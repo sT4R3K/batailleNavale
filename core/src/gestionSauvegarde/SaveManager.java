@@ -5,6 +5,8 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
+import jeu.Game;
+
 public class SaveManager {
 
 	public static void saveToFile(Game g) {

@@ -7,8 +7,8 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
-import gestionSauvegarde.Game;
 import graphic.factory.Factory;
+import jeu.Game;
 import map.Map;
 
 public abstract class Entity extends ApplicationAdapter {
