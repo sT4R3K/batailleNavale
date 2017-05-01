@@ -23,9 +23,23 @@ public class Difficile implements Strategie {
 		
 		double r = Math.random();
 		
-		// L'IA a une chance sur trois de toucher un bateau
-		if (r>0.33 && r<0.66) {
+		// L'IA a une chance sur deux de toucher un bateau
+		if (r<0.5) {
+			int x = (int) (Math.random() * 10);
+			int y = (int) (Math.random() * 10);
 			
+			c = map.grilleJoueur[x][y];
+			
+			while(true) {
+				if (c.boat != null && c.coule == false) {
+					break;
+				}
+				
+				x = (int) (Math.random() * 10);
+				y = (int) (Math.random() * 10);
+				
+				c = map.grilleJoueur[x][y];
+			}
 		}
 		
 		// Sinon choisir une case aléatoirement

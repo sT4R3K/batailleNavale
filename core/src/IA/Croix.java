@@ -37,20 +37,24 @@ public class Croix implements Strategie, Serializable {
 				r = Math.random();
 				int Dj = (r<0.5)?1:-1;
 				
-				if (map.grilleJoueur[i][j].touche) {
-					if (((Di>0 && i>0)||(Di<0 && i<9)) && !map.grilleJoueur[i-Di][j].touche && !map.grilleJoueur[i-Di][j].plouf) {
+				if (map.grilleJoueur[i][j].touche && !map.grilleJoueur[i][j].coule) {
+					c = map.grilleJoueur[i][j];
+					selected = true;
+				}
+				else if (map.grilleJoueur[i][j].coule) {
+					if (((Di>0 && i>0)||(Di<0 && i<9)) && !map.grilleJoueur[i-Di][j].coule && !map.grilleJoueur[i-Di][j].plouf) {
 						c = map.grilleJoueur[i-Di][j];
 						selected = true;
 					}
-					else if (((Di>0 && i<9)||(Di<0 && i>0)) && !map.grilleJoueur[i+Di][j].touche && !map.grilleJoueur[i+Di][j].plouf) {
+					else if (((Di>0 && i<9)||(Di<0 && i>0)) && !map.grilleJoueur[i+Di][j].coule && !map.grilleJoueur[i+Di][j].plouf) {
 						c = map.grilleJoueur[i+Di][j];
 						selected = true;
 					}
-					else if (((Dj>0 && j>0)||(Dj<0 && j<9)) && !map.grilleJoueur[i][j-Dj].touche && !map.grilleJoueur[i][j-Dj].plouf) {
+					else if (((Dj>0 && j>0)||(Dj<0 && j<9)) && !map.grilleJoueur[i][j-Dj].coule && !map.grilleJoueur[i][j-Dj].plouf) {
 						c = map.grilleJoueur[i][j-Dj];
 						selected = true;
 					}
-					else if (((Dj>0 && j<9)||(Dj<0 && j>0)) && !map.grilleJoueur[i][j+Dj].touche && !map.grilleJoueur[i][j+Dj].plouf) {
+					else if (((Dj>0 && j<9)||(Dj<0 && j>0)) && !map.grilleJoueur[i][j+Dj].coule && !map.grilleJoueur[i][j+Dj].plouf) {
 						c = map.grilleJoueur[i][j+Dj];
 						selected = true;
 					}

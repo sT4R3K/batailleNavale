@@ -158,6 +158,9 @@ public class Map implements Serializable {
 			if (c.boat.vie[Math.abs(c.zone)] > 0) {
 				c.boat.hit(Math.abs(c.zone));
 			}
+			if (c.boat.vie[Math.abs(c.zone)] <= 0) {
+				c.coule = true;
+			}
 		} else {
 			c.reveal = true;
 			c.plouf = true;

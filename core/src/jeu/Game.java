@@ -8,6 +8,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import IA.Aleatoire;
 import IA.Bot;
 import IA.Croix;
+import IA.Difficile;
 import map.Case;
 import map.Current;
 import map.Map;
@@ -19,7 +20,7 @@ public abstract class Game implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	public Map map;
-	Bot bot = new Bot(new Croix());
+	protected Bot bot = new Bot(new Difficile());
 	public boolean placement = true;
 
 	public static int tour = 0;
