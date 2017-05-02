@@ -1,0 +1,1586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.0" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="graphic.BattlePerso.diff" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/BattlePerso.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="2585" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="jeu.Menu" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/Menu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="230" x="158" y="-170"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="graphic.BattlePerso.alea" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/BattlePerso.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="2834" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="jeu.Start.retour" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/Start.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1226" y="74"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="graphic.BattlePerso" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/BattlePerso.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="477" width="358" x="3188" y="1857"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="jeu.Start.saveVal" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/Start.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1243" y="539"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="map.Epoque" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/map/Epoque.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="87" x="431" y="-170"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="graphic.Battle.alea" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/Battle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="2357" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="graphic.Battle.diff" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/Battle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="1463" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="graphic.Battle.old" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/Battle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="1235" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="graphic.Battle.croix" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/Battle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="1691" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="jeu.Start.charger" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/Start.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1226" y="382"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="graphic.Entity" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/Entity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="329" x="2336" y="931"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="graphic.UI" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/UI.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="312" x="1984" y="1160"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="jeu.Start.quitter" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/Start.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1225" y="177"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="jeu.Game" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/Game.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="164" x="2005" y="2955"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="gestionSauvegarde.SaveManager" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/gestionSauvegarde/SaveManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="167" x="779" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="graphic.Souris" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/Souris.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="334" x="1187" y="1857"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="jeu.MenuEpoque" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/MenuEpoque.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="266" x="560" y="-170"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="IA.Croix" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/IA/Croix.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="155" x="1628" y="3431"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="map.Boat" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/map/Boat.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="155" x="3307" y="4563"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="map.Current" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/map/Current.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="155" x="3307" y="4792"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="jeu.Start.normal" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/Start.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="2352" y="527"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="graphic.BattlePerso.next" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/BattlePerso.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="3518" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="jeu.Start" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/Start.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="657" width="212" x="1923" y="-170"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="map.Debug" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/map/Debug.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="334" x="2336" y="1160"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="gestionSauvegarde.SimpleGame" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/gestionSauvegarde/SimpleGame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="155" x="2761" y="3202"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="graphic.factory.Factory" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/factory/Factory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="531" width="350" x="4700" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="IA.Difficile" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/IA/Difficile.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="155" x="2115" y="3431"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="jeu.Start.save" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/Start.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="1923" y="527"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="gestionSauvegarde.FileManager" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/gestionSauvegarde/FileManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="938" y="-58"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="graphic.GraphBattle" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/GraphBattle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="657" width="360" x="1542" y="1160"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="jeu.Start.perso" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/Start.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="2580" y="527"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="34" language="java" name="IA.Strategie" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/IA/Strategie.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="140" x="2176" y="3624"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="35" language="java" name="graphic.GraphBattle.sens" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/GraphBattle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="1007" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="IA.Aleatoire" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/IA/Aleatoire.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="155" x="2585" y="3431"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="map.Old" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/map/Old.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="155" x="4637" y="4792"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="graphic.BattlePerso.incb" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/BattlePerso.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="3746" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="graphic.Battle" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/Battle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="330" x="1984" y="1857"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="jeu.Start.quitterGame" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/Start.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="2808" y="527"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="gestionSauvegarde.PersoGame" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/gestionSauvegarde/PersoGame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="91" x="1068" y="-170"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="graphic.Clavier" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/Clavier.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1274" y="278"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="map.Case" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/map/Case.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="155" x="2337" y="4262"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="gestionSauvegarde.PersonnalGame" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/gestionSauvegarde/PersonnalGame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="155" x="4398" y="3202"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="45" language="java" name="graphic.BattlePerso.old" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/BattlePerso.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="3062" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="46" language="java" name="graphic.BattlePerso.incj" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/BattlePerso.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="3974" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="IA.Bot" project="BatailleNavale-core" file="/BatailleNavale-core/src/IA/Bot.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="159" x="2342" y="3431"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="48" language="java" name="graphic.BattlePerso.decj" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/BattlePerso.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="4202" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="49" language="java" name="map.Modern" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/map/Modern.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="87" x="1200" y="-170"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="50" language="java" name="graphic.BattlePerso.decb" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/BattlePerso.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="4430" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="51" language="java" name="graphic.Battle.curr" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/Battle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="2129" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="52" language="java" name="jeu.BatailleNavale" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/jeu/BatailleNavale.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="168" x="3588" y="666"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="53" language="java" name="graphic.factory.Son" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/factory/Son.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="421" x="1328" y="-170"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="54" language="java" name="graphic.BattlePerso.curr" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/BattlePerso.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="3290" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="55" language="java" name="map.Map" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/map/Map.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="459" width="229" x="2337" y="3763"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="56" language="java" name="graphic.Singleton" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/Singleton.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="87" x="1799" y="-170"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="57" language="java" name="graphic.GraphBattle.feu" project="BatailleNavale-core" 
+    file="/BatailleNavale-core/src/graphic/GraphBattle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="188" x="467" y="2374"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="58">    
+    <bendpoint x="1909" y="2374"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <nesting id="59">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </nesting>  
+  <dependency id="60">    
+    <bendpoint x="1551" y="1857"/>    
+    <bendpoint x="976" y="2374"/>    
+    <bendpoint x="976" y="2955"/>    
+    <bendpoint x="976" y="3202"/>    
+    <bendpoint x="976" y="3431"/>    
+    <bendpoint x="976" y="3624"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="61">    
+    <bendpoint x="5111" y="527"/>    
+    <bendpoint x="5111" y="666"/>    
+    <bendpoint x="5111" y="931"/>    
+    <bendpoint x="5090" y="1160"/>    
+    <bendpoint x="5090" y="1857"/>    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="62">    
+    <bendpoint x="955" y="3624"/>    
+    <bendpoint x="955" y="3763"/>    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <dependency id="63">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="37"/>  
+  </dependency>  
+  <nesting id="64">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="12"/>  
+  </nesting>  
+  <generalization id="65">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <generalization id="66">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <dependency id="67">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="68">    
+    <bendpoint x="3557" y="666"/>    
+    <bendpoint x="3576" y="931"/>    
+    <bendpoint x="3618" y="1160"/>    
+    <bendpoint x="3660" y="1857"/>    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <nesting id="69">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="50"/>  
+  </nesting>  
+  <dependency id="70">    
+    <bendpoint x="4367" y="2955"/>    
+    <bendpoint x="4367" y="3202"/>    
+    <bendpoint x="4394" y="3431"/>    
+    <bendpoint x="4394" y="3624"/>    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="71">    
+    <end type="SOURCE" refId="40"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <dependency id="72">    
+    <bendpoint x="769" y="666"/>    
+    <bendpoint x="748" y="931"/>    
+    <bendpoint x="748" y="1160"/>    
+    <bendpoint x="571" y="1857"/>    
+    <bendpoint x="394" y="2374"/>    
+    <bendpoint x="488" y="2955"/>    
+    <bendpoint x="580" y="3202"/>    
+    <bendpoint x="622" y="3431"/>    
+    <bendpoint x="643" y="3624"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="73">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="74">    
+    <bendpoint x="5132" y="931"/>    
+    <bendpoint x="5132" y="1160"/>    
+    <bendpoint x="5174" y="1857"/>    
+    <bendpoint x="5174" y="2374"/>    
+    <bendpoint x="5174" y="2955"/>    
+    <bendpoint x="5174" y="3202"/>    
+    <bendpoint x="5174" y="3431"/>    
+    <bendpoint x="5174" y="3624"/>    
+    <bendpoint x="5174" y="3763"/>    
+    <bendpoint x="5174" y="4262"/>    
+    <bendpoint x="5174" y="4563"/>    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="37"/>  
+  </dependency>  
+  <generalization id="75">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <association id="76">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="77" name="sou"/>      
+      <multiplicity id="78" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="79">    
+    <bendpoint x="811" y="1857"/>    
+    <bendpoint x="436" y="2374"/>    
+    <bendpoint x="467" y="2955"/>    
+    <bendpoint x="499" y="3202"/>    
+    <bendpoint x="513" y="3431"/>    
+    <bendpoint x="526" y="3624"/>    
+    <bendpoint x="538" y="3763"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <dependency id="80">    
+    <bendpoint x="2636" y="2955"/>    
+    <bendpoint x="2573" y="3202"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="81">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <generalization id="82">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <dependency id="83">    
+    <bendpoint x="3576" y="1857"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="84">    
+    <bendpoint x="5048" y="931"/>    
+    <bendpoint x="5048" y="1160"/>    
+    <bendpoint x="5048" y="1857"/>    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <association id="85">    
+    <bendpoint x="2721" y="931"/>    
+    <bendpoint x="2721" y="1160"/>    
+    <bendpoint x="2407" y="1857"/>    
+    <bendpoint x="2077" y="2374"/>    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="86" name="gear"/>      
+      <multiplicity id="87" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="88">    
+    <bendpoint x="2344" y="1857"/>    
+    <bendpoint x="2014" y="2374"/>    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <generalization id="89">    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <dependency id="90">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <association id="91">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="92" name="grilleJoueur"/>      
+      <multiplicity id="93" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="94">    
+    <bendpoint x="2531" y="2955"/>    
+    <bendpoint x="2661" y="3202"/>    
+    <bendpoint x="2791" y="3431"/>    
+    <bendpoint x="2833" y="3624"/>    
+    <bendpoint x="2855" y="3763"/>    
+    <bendpoint x="2855" y="4262"/>    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="95">    
+    <bendpoint x="3397" y="931"/>    
+    <bendpoint x="3397" y="1160"/>    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <association id="96">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="97" name="instance"/>      
+      <multiplicity id="98" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="99">    
+    <bendpoint x="3576" y="1160"/>    
+    <bendpoint x="3639" y="1857"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="100" name="graph"/>      
+      <multiplicity id="101" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="102">    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="103" name="instance"/>      
+      <multiplicity id="104" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="105">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
+  <generalization id="106">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="21"/>  
+  </generalization>  
+  <dependency id="107">    
+    <bendpoint x="4373" y="3431"/>    
+    <bendpoint x="4520" y="3624"/>    
+    <bendpoint x="4583" y="3763"/>    
+    <bendpoint x="4646" y="4262"/>    
+    <bendpoint x="4646" y="4563"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="37"/>  
+  </dependency>  
+  <dependency id="108">    
+    <bendpoint x="2573" y="2955"/>    
+    <bendpoint x="2489" y="3202"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <dependency id="109">    
+    <bendpoint x="4541" y="3431"/>    
+    <bendpoint x="4541" y="3624"/>    
+    <bendpoint x="4541" y="3763"/>    
+    <bendpoint x="4541" y="4262"/>    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="110">    
+    <end type="SOURCE" refId="45"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <generalization id="111">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="21"/>  
+  </generalization>  
+  <association id="112">    
+    <bendpoint x="2700" y="1160"/>    
+    <bendpoint x="2386" y="1857"/>    
+    <bendpoint x="2056" y="2374"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="113" name="gear"/>      
+      <multiplicity id="114" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="115">    
+    <bendpoint x="2575" y="3624"/>    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="116">    
+    <bendpoint x="882" y="666"/>    
+    <bendpoint x="882" y="931"/>    
+    <bendpoint x="882" y="1160"/>    
+    <bendpoint x="882" y="1857"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <nesting id="117">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="51"/>  
+  </nesting>  
+  <generalization id="118">    
+    <bendpoint x="1511" y="1160"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <dependency id="119">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="120">    
+    <bendpoint x="4499" y="3431"/>    
+    <bendpoint x="4499" y="3624"/>    
+    <bendpoint x="4436" y="3763"/>    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <dependency id="121">    
+    <bendpoint x="685" y="2374"/>    
+    <bendpoint x="685" y="2955"/>    
+    <bendpoint x="643" y="3202"/>    
+    <bendpoint x="601" y="3431"/>    
+    <bendpoint x="601" y="3624"/>    
+    <bendpoint x="601" y="3763"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <dependency id="122">    
+    <bendpoint x="769" y="1857"/>    
+    <bendpoint x="415" y="2374"/>    
+    <bendpoint x="415" y="2955"/>    
+    <bendpoint x="415" y="3202"/>    
+    <bendpoint x="415" y="3431"/>    
+    <bendpoint x="415" y="3624"/>    
+    <bendpoint x="415" y="3763"/>    
+    <bendpoint x="415" y="4262"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="123">    
+    <bendpoint x="2082" y="3624"/>    
+    <bendpoint x="2082" y="3763"/>    
+    <bendpoint x="2082" y="4262"/>    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <association id="124">    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="125" name="monde"/>      
+      <multiplicity id="126" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="127">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="10"/>  
+  </nesting>  
+  <dependency id="128">    
+    <bendpoint x="2124" y="3624"/>    
+    <bendpoint x="2124" y="3763"/>    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <dependency id="129">    
+    <bendpoint x="2365" y="1857"/>    
+    <bendpoint x="2035" y="2374"/>    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="130">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="131">    
+    <end type="SOURCE" refId="43" navigable="false">      
+      <attribute id="132" name="boat"/>      
+      <multiplicity id="133" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="134">    
+    <bendpoint x="2854" y="3431"/>    
+    <bendpoint x="2854" y="3624"/>    
+    <bendpoint x="2834" y="3763"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <association id="135">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="136" name="clavier"/>      
+      <multiplicity id="137" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="42" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="138">    
+    <bendpoint x="748" y="666"/>    
+    <bendpoint x="769" y="931"/>    
+    <bendpoint x="790" y="1160"/>    
+    <bendpoint x="790" y="1857"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <nesting id="139">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="46"/>  
+  </nesting>  
+  <nesting id="140">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="48"/>  
+  </nesting>  
+  <nesting id="141">    
+    <bendpoint x="1572" y="1857"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="35"/>  
+  </nesting>  
+  <nesting id="142">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="38"/>  
+  </nesting>  
+  <dependency id="143">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <nesting id="144">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="40"/>  
+  </nesting>  
+  <nesting id="145">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="15"/>  
+  </nesting>  
+  <association id="146">    
+    <bendpoint x="5069" y="931"/>    
+    <bendpoint x="5069" y="1160"/>    
+    <bendpoint x="5111" y="1857"/>    
+    <bendpoint x="5111" y="2374"/>    
+    <bendpoint x="4688" y="2955"/>    
+    <bendpoint x="4625" y="3202"/>    
+    <bendpoint x="4520" y="3431"/>    
+    <bendpoint x="4436" y="3624"/>    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="147" name="map"/>      
+      <multiplicity id="148" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="55" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="149">    
+    <bendpoint x="2367" y="3624"/>    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="150">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="151">    
+    <bendpoint x="4669" y="2374"/>    
+    <bendpoint x="4667" y="2955"/>    
+    <bendpoint x="4583" y="3202"/>    
+    <bendpoint x="4478" y="3431"/>    
+    <bendpoint x="4415" y="3624"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="152">    
+    <bendpoint x="2103" y="3624"/>    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="153">    
+    <bendpoint x="3597" y="931"/>    
+    <bendpoint x="3597" y="1160"/>    
+    <bendpoint x="3597" y="1857"/>    
+    <bendpoint x="4648" y="2374"/>    
+    <bendpoint x="4346" y="2955"/>    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <association id="154">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="155" name="instance"/>      
+      <multiplicity id="156" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="53" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="157">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="158">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="159">    
+    <bendpoint x="559" y="2955"/>    
+    <bendpoint x="559" y="3202"/>    
+    <bendpoint x="559" y="3431"/>    
+    <bendpoint x="559" y="3624"/>    
+    <bendpoint x="559" y="3763"/>    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <dependency id="160">    
+    <bendpoint x="1448" y="527"/>    
+    <bendpoint x="1448" y="666"/>    
+    <bendpoint x="1448" y="931"/>    
+    <bendpoint x="1490" y="1160"/>    
+    <bendpoint x="1710" y="1857"/>    
+    <bendpoint x="1930" y="2374"/>    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="161">    
+    <bendpoint x="2510" y="2955"/>    
+    <bendpoint x="2510" y="3202"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="162">    
+    <bendpoint x="4604" y="2955"/>    
+    <bendpoint x="4604" y="3202"/>    
+    <bendpoint x="4604" y="3431"/>    
+    <bendpoint x="4604" y="3624"/>    
+    <bendpoint x="4604" y="3763"/>    
+    <bendpoint x="4604" y="4262"/>    
+    <end type="SOURCE" refId="45"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <nesting id="163">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="30"/>  
+  </nesting>  
+  <dependency id="164">    
+    <bendpoint x="1400" y="1160"/>    
+    <bendpoint x="1400" y="931"/>    
+    <bendpoint x="1400" y="666"/>    
+    <bendpoint x="1400" y="527"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <dependency id="165">    
+    <bendpoint x="1953" y="3202"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <dependency id="166">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <realization id="167">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <nesting id="168">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="6"/>  
+  </nesting>  
+  <dependency id="169">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <dependency id="170">    
+    <bendpoint x="1932" y="666"/>    
+    <bendpoint x="1932" y="931"/>    
+    <bendpoint x="1932" y="1160"/>    
+    <bendpoint x="1932" y="1857"/>    
+    <bendpoint x="1951" y="2374"/>    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="171">    
+    <bendpoint x="1953" y="931"/>    
+    <bendpoint x="1953" y="1160"/>    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="39"/>  
+  </dependency>  
+  <dependency id="172">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <generalization id="173">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="32"/>  
+  </generalization>  
+  <dependency id="174">    
+    <bendpoint x="4562" y="3431"/>    
+    <bendpoint x="4562" y="3624"/>    
+    <bendpoint x="4562" y="3763"/>    
+    <bendpoint x="4562" y="4262"/>    
+    <bendpoint x="4562" y="4563"/>    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="37"/>  
+  </dependency>  
+  <nesting id="175">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="9"/>  
+  </nesting>  
+  <dependency id="176">    
+    <bendpoint x="4625" y="2955"/>    
+    <bendpoint x="4646" y="3202"/>    
+    <bendpoint x="4646" y="3431"/>    
+    <bendpoint x="4640" y="3624"/>    
+    <bendpoint x="4633" y="3763"/>    
+    <bendpoint x="4625" y="4262"/>    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="177">    
+    <bendpoint x="997" y="2955"/>    
+    <bendpoint x="997" y="3202"/>    
+    <bendpoint x="997" y="3431"/>    
+    <bendpoint x="997" y="3624"/>    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="178">    
+    <bendpoint x="1679" y="2955"/>    
+    <bendpoint x="1679" y="3202"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="179">    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="180">    
+    <bendpoint x="790" y="666"/>    
+    <bendpoint x="790" y="931"/>    
+    <bendpoint x="769" y="1160"/>    
+    <bendpoint x="748" y="1857"/>    
+    <bendpoint x="748" y="2374"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="181">    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="182">    
+    <bendpoint x="2719" y="2955"/>    
+    <bendpoint x="2719" y="3202"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <dependency id="183">    
+    <bendpoint x="664" y="2955"/>    
+    <bendpoint x="664" y="3202"/>    
+    <bendpoint x="664" y="3431"/>    
+    <bendpoint x="664" y="3624"/>    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <realization id="184">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <dependency id="185">    
+    <bendpoint x="2896" y="3431"/>    
+    <bendpoint x="2812" y="3624"/>    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <generalization id="186">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <dependency id="187">    
+    <bendpoint x="1469" y="666"/>    
+    <bendpoint x="1421" y="931"/>    
+    <bendpoint x="1289" y="1160"/>    
+    <bendpoint x="1156" y="1857"/>    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="188">    
+    <bendpoint x="2946" y="2955"/>    
+    <bendpoint x="2946" y="3202"/>    
+    <bendpoint x="2875" y="3431"/>    
+    <bendpoint x="2791" y="3624"/>    
+    <end type="SOURCE" refId="45"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <association id="189">    
+    <bendpoint x="2813" y="4262"/>    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="190" name="bot"/>      
+      <multiplicity id="191" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="192">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="193">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="194">    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="195">    
+    <bendpoint x="2098" y="2374"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <nesting id="196">    
+    <bendpoint x="1014" y="1857"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="57"/>  
+  </nesting>  
+  <association id="197">    
+    <end type="SOURCE" refId="47" navigable="false">      
+      <attribute id="198" name="strategie"/>      
+      <multiplicity id="199" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="200">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="54"/>  
+  </nesting>  
+  <dependency id="201">    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <nesting id="202">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <dependency id="203">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <dependency id="204">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <dependency id="205">    
+    <bendpoint x="2552" y="2955"/>    
+    <bendpoint x="2594" y="3202"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <dependency id="206">    
+    <bendpoint x="1597" y="2955"/>    
+    <bendpoint x="1597" y="3202"/>    
+    <bendpoint x="1597" y="3431"/>    
+    <bendpoint x="1597" y="3624"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="207">    
+    <bendpoint x="4730" y="2955"/>    
+    <bendpoint x="4730" y="3202"/>    
+    <bendpoint x="4730" y="3431"/>    
+    <bendpoint x="4730" y="3624"/>    
+    <bendpoint x="4730" y="3763"/>    
+    <bendpoint x="4730" y="4262"/>    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="208">    
+    <bendpoint x="2596" y="3624"/>    
+    <bendpoint x="2596" y="3763"/>    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <dependency id="209">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <dependency id="210">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <nesting id="211">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="33"/>  
+  </nesting>  
+  <association id="212">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="213" name="selection"/>      
+      <multiplicity id="214" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="215">    
+    <bendpoint x="4709" y="2955"/>    
+    <bendpoint x="4667" y="3202"/>    
+    <bendpoint x="4625" y="3431"/>    
+    <bendpoint x="4583" y="3624"/>    
+    <bendpoint x="4520" y="3763"/>    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <dependency id="216">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="52"/>  
+  </dependency>  
+  <realization id="217">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <dependency id="218">    
+    <bendpoint x="1953" y="1857"/>    
+    <bendpoint x="1972" y="2374"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="219">    
+    <bendpoint x="2594" y="2955"/>    
+    <bendpoint x="2552" y="3202"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <dependency id="220">    
+    <bendpoint x="1974" y="2955"/>    
+    <bendpoint x="1974" y="3202"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="47"/>  
+  </dependency>  
+  <nesting id="221">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="8"/>  
+  </nesting>  
+  <dependency id="222">    
+    <bendpoint x="706" y="2374"/>    
+    <bendpoint x="706" y="2955"/>    
+    <bendpoint x="706" y="3202"/>    
+    <bendpoint x="706" y="3431"/>    
+    <bendpoint x="706" y="3624"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="223">    
+    <bendpoint x="4352" y="3431"/>    
+    <bendpoint x="4457" y="3624"/>    
+    <bendpoint x="4457" y="3763"/>    
+    <bendpoint x="4457" y="4262"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <dependency id="224">    
+    <bendpoint x="2145" y="3624"/>    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <association id="225">    
+    <bendpoint x="2834" y="4262"/>    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="226" name="joueur"/>      
+      <multiplicity id="227" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="228">    
+    <bendpoint x="373" y="666"/>    
+    <bendpoint x="373" y="931"/>    
+    <bendpoint x="373" y="1160"/>    
+    <bendpoint x="373" y="1857"/>    
+    <bendpoint x="373" y="2374"/>    
+    <bendpoint x="394" y="2955"/>    
+    <bendpoint x="478" y="3202"/>    
+    <bendpoint x="580" y="3431"/>    
+    <bendpoint x="622" y="3624"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <association id="229">    
+    <bendpoint x="2332" y="3202"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="230" name="bot"/>      
+      <multiplicity id="231" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="47" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="232">    
+    <bendpoint x="2770" y="3431"/>    
+    <bendpoint x="2770" y="3624"/>    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="233">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="234">    
+    <bendpoint x="2803" y="2374"/>    
+    <bendpoint x="2615" y="2955"/>    
+    <bendpoint x="2615" y="3202"/>    
+    <bendpoint x="2554" y="3431"/>    
+    <bendpoint x="2554" y="3624"/>    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <nesting id="235">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="45"/>  
+  </nesting>  
+  <dependency id="236">    
+    <bendpoint x="1658" y="2955"/>    
+    <bendpoint x="1658" y="3202"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <nesting id="237">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="11"/>  
+  </nesting>  
+  <association id="238">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="239" name="put"/>      
+      <multiplicity id="240" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="241">    
+    <bendpoint x="1018" y="2955"/>    
+    <bendpoint x="831" y="3202"/>    
+    <bendpoint x="643" y="3431"/>    
+    <bendpoint x="580" y="3624"/>    
+    <bendpoint x="517" y="3763"/>    
+    <bendpoint x="517" y="4262"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <nesting id="242">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="23"/>  
+  </nesting>  
+  <association id="243">    
+    <bendpoint x="5090" y="931"/>    
+    <bendpoint x="5111" y="1160"/>    
+    <bendpoint x="5132" y="1857"/>    
+    <bendpoint x="5132" y="2374"/>    
+    <bendpoint x="5132" y="2955"/>    
+    <bendpoint x="5132" y="3202"/>    
+    <bendpoint x="5132" y="3431"/>    
+    <bendpoint x="5132" y="3624"/>    
+    <bendpoint x="5132" y="3763"/>    
+    <bendpoint x="5132" y="4262"/>    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="244" name="bateau"/>      
+      <multiplicity id="245" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="246">    
+    <bendpoint x="1911" y="666"/>    
+    <bendpoint x="2695" y="931"/>    
+    <bendpoint x="3156" y="1160"/>    
+    <bendpoint x="3618" y="1857"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <nesting id="247">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="24"/>  
+  </nesting>  
+  <association id="248">    
+    <bendpoint x="2311" y="3202"/>    
+    <bendpoint x="2311" y="3431"/>    
+    <bendpoint x="2346" y="3624"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="249" name="map"/>      
+      <multiplicity id="250" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="55" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="251">    
+    <bendpoint x="3026" y="527"/>    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="252" name="app"/>      
+      <multiplicity id="253" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="52" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="254">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="255" name="grilleBot"/>      
+      <multiplicity id="256" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="257">    
+    <bendpoint x="5027" y="931"/>    
+    <bendpoint x="5049" y="1160"/>    
+    <bendpoint x="5070" y="1857"/>    
+    <bendpoint x="5090" y="2374"/>    
+    <bendpoint x="4646" y="2955"/>    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="44"/>  
+  </dependency>  
+  <dependency id="258">    
+    <bendpoint x="5153" y="527"/>    
+    <bendpoint x="5153" y="666"/>    
+    <bendpoint x="5153" y="931"/>    
+    <bendpoint x="5153" y="1160"/>    
+    <bendpoint x="5153" y="1857"/>    
+    <bendpoint x="5153" y="2374"/>    
+    <bendpoint x="4931" y="2955"/>    
+    <bendpoint x="4709" y="3202"/>    
+    <bendpoint x="4583" y="3431"/>    
+    <bendpoint x="4478" y="3624"/>    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <dependency id="259">    
+    <bendpoint x="1993" y="2374"/>    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="260">    
+    <bendpoint x="1700" y="2955"/>    
+    <bendpoint x="1637" y="3202"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="261">    
+    <bendpoint x="2489" y="2955"/>    
+    <bendpoint x="2531" y="3202"/>    
+    <bendpoint x="2531" y="3431"/>    
+    <bendpoint x="2531" y="3624"/>    
+    <end type="SOURCE" refId="51"/>    
+    <end type="TARGET" refId="55"/>  
+  </dependency>  
+  <association id="262">    
+    <bendpoint x="1469" y="931"/>    
+    <bendpoint x="1469" y="1160"/>    
+    <end type="SOURCE" refId="52" navigable="false">      
+      <attribute id="263" name="souris"/>      
+      <multiplicity id="264" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="265">    
+    <bendpoint x="727" y="666"/>    
+    <bendpoint x="727" y="931"/>    
+    <bendpoint x="727" y="1160"/>    
+    <bendpoint x="727" y="1857"/>    
+    <bendpoint x="727" y="2374"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
