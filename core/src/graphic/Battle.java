@@ -12,6 +12,7 @@ import com.badlogic.gdx.utils.viewport.Viewport;
 
 import IA.Aleatoire;
 import IA.Bot;
+import IA.Croix;
 import IA.Difficile;
 import graphic.factory.Factory;
 import jeu.Game;
@@ -26,6 +27,7 @@ public class Battle extends GraphBattle {
 	TextButton setCurrent;
 
 	TextButton setAlea;
+	TextButton setCroix;
 	TextButton setDiff;
 
 	public Battle(SpriteBatch sb, Stage stage, Viewport vp, Game game, OrthographicCamera camera) {
@@ -35,16 +37,19 @@ public class Battle extends GraphBattle {
 		setOld = new TextButton("Ancien monde", Factory.skin);
 		setCurrent = new TextButton("Nouveau monde", Factory.skin);
 		setAlea = new TextButton("Facile", Factory.skin);
+		setCroix = new TextButton ("Normale", Factory.skin);
 		setDiff = new TextButton("Difficile", Factory.skin);
 
 		setOld.addListener(new old());
 		setCurrent.addListener(new curr());
 		setAlea.addListener(new alea());
+		setCroix.addListener(new croix());
 		setDiff.addListener(new diff());
 
 		stage.addActor(setOld);
 		stage.addActor(setCurrent);
 		stage.addActor(setAlea);
+		stage.addActor(setCroix);
 		stage.addActor(setDiff);
 
 		for (Actor a : stage.getActors()) {
@@ -53,6 +58,25 @@ public class Battle extends GraphBattle {
 
 		Gdx.input.setInputProcessor(stage);
 	}
+	
+	void set(TextButton but, TextButton butt, TextButton buttt) {
+
+		but.setVisible(true);
+		butt.setVisible(true);
+		buttt.setVisible(true);
+
+		but.setSize(but.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
+		butt.setSize(butt.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
+		buttt.setSize(butt.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
+
+		but.setPosition((stage.getWidth() / 2) - but.getWidth() / 2, stage.getHeight() / 2 + 2*Factory.hauteur());
+		butt.setPosition((stage.getWidth() / 2) - butt.getWidth() / 2, stage.getHeight() / 2 );
+		buttt.setPosition((stage.getWidth() / 2) - butt.getWidth() / 2, stage.getHeight() / 2 - 2*Factory.hauteur());
+
+		stage.draw();
+
+	}
+
 
 	void set(TextButton but, TextButton butt) {
 
@@ -99,7 +123,7 @@ public class Battle extends GraphBattle {
 				}
 				load();
 			} else {
-				set(setAlea, setDiff);
+				set(setAlea, setCroix,setDiff);
 			}
 		} else {
 			set(setOld, setCurrent);
@@ -145,6 +169,7 @@ public class Battle extends GraphBattle {
 			gear.bot = new Bot(new Aleatoire());
 			diff = true;
 			setAlea.setVisible(false);
+			setCroix.setVisible(false);
 			setDiff.setVisible(false);
 		}
 	}
@@ -154,6 +179,18 @@ public class Battle extends GraphBattle {
 		public void clicked(InputEvent event, float x, float y) {
 			gear.bot = new Bot(new Difficile());
 			setAlea.setVisible(false);
+			setCroix.setVisible(false);
+			setDiff.setVisible(false);
+			diff = true;
+		}
+	}
+	
+	public class croix extends ClickListener {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			gear.bot = new Bot(new Croix());
+			setAlea.setVisible(false);
+			setCroix.setVisible(false);
 			setDiff.setVisible(false);
 			diff = true;
 		}
