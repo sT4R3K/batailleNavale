@@ -12,6 +12,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
+import com.badlogic.gdx.scenes.scene2d.ui.SelectBox;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
@@ -34,6 +35,9 @@ public class Start extends ApplicationAdapter {
 	TextButton validerSave;
 	TextField field;
 
+	SelectBox difficulte;
+	SelectBox epoque;
+	
 	ArrayList<TextButton> alt;
 
 	ArrayList<TextButton> save;
@@ -68,7 +72,13 @@ public class Start extends ApplicationAdapter {
 		retour = bouton(new retour(), "Retour");
 		exitGame = bouton(new quitterGame(), "Quitter la partie");
 		quitter = bouton(new quitter(), "Quitter");
-
+		
+		String [] itemsD = {"Facile","Normale","Difficile"};
+		difficulte = selectBox (new difficulte (), itemsD);
+		
+		String [] itemsE = {"Ancienne","Moderne"};
+		epoque = selectBox (new epoque (), itemsE);
+		
 		field.setVisible(false);
 
 		Gdx.input.setInputProcessor(stage);
@@ -84,6 +94,17 @@ public class Start extends ApplicationAdapter {
 		but.setVisible(false);
 		return but;
 	}
+	
+	public SelectBox selectBox(ClickListener clic, String [] items) {
+		
+		SelectBox s = new SelectBox (Factory.skin);
+		s.setOrigin(0, 0);
+		stage.addActor(s);
+		s.addListener(clic);
+		s.setItems(items);
+		s.setVisible(false);
+		return s;
+	}
 
 	void maj() {
 		vp.update(Factory.width(), Factory.height(), true);
@@ -92,6 +113,9 @@ public class Start extends ApplicationAdapter {
 			bsize(b);
 			posBB(b);
 		}
+		ssize (difficulte);
+		ssize (epoque);
+		posS (epoque, difficulte);
 		aidePositionnement = 1;
 
 		Factory.font.getData().setScale(Factory.width() / 500);
@@ -101,6 +125,11 @@ public class Start extends ApplicationAdapter {
 	public void bsize(TextButton b) {
 		int rap = Factory.largeur() / 3 * b.getText().length();
 		b.setSize(rap, b.getHeight());
+	}
+	
+	public void ssize (SelectBox s) {
+		int rap = Factory.largeur() / 3 * 10;
+		s.setSize(rap, s.getHeight());
 	}
 
 	int aidePositionnement = 1;
@@ -114,6 +143,18 @@ public class Start extends ApplicationAdapter {
 		}
 
 	}
+	
+	public void posS(SelectBox E, SelectBox D) {
+		if (E.isVisible() && D.isVisible()) {
+			int rap = Factory.largeur() / 3 * 10;
+			E.setPosition((Factory.width() / 2) - rap / 2 - 180,
+					(float) ((Factory.height() / 1.5) - Factory.hauteur() * 4));
+			D.setPosition((Factory.width() / 2) - rap / 2 + 180,
+					(float) ((Factory.height() / 1.5) - Factory.hauteur() * 4));
+			//aidePositionnement++;
+		}
+
+	}
 
 	public void visible(Button... T) {
 		for (Button b : T) {
@@ -123,6 +164,16 @@ public class Start extends ApplicationAdapter {
 
 	public void cas(Button... T) {
 		hide();
+		visible(T);
+		batch.end();
+		stage.draw();
+		batch.begin();
+	}
+	
+	public void cas(SelectBox D, SelectBox E, Button... T) {
+		hide();
+		D.setVisible(true);
+		E.setVisible(true);
 		visible(T);
 		batch.end();
 		stage.draw();
@@ -171,7 +222,7 @@ public class Start extends ApplicationAdapter {
 			break;
 
 		default:
-			cas(rapide, perso, chargement, quitter);
+			cas(difficulte, epoque, rapide, perso, chargement, quitter);
 			;
 		}
 		batch.end();
@@ -205,6 +256,8 @@ public class Start extends ApplicationAdapter {
 		for (TextButton b : save) {
 			b.setVisible(false);
 		}
+		difficulte.setVisible(false);
+		epoque.setVisible(false);
 	}
 
 	public void charge() {
@@ -356,6 +409,22 @@ public class Start extends ApplicationAdapter {
 					}
 				});
 			}
+		}
+	}
+	
+	
+	public class epoque extends ClickListener {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			epoque.hideList();
+		}
+		
+	}
+	
+	
+	public class difficulte extends ClickListener {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
 		}
 	}
 
