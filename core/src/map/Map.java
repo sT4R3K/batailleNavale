@@ -23,6 +23,30 @@ public class Map implements Serializable {
 	public boolean tourJoueur = true;
 	public boolean sauvegarde = false;
 
+	public boolean ajouter(Boat b) {
+		if (nbCasesJoueur - b.vie.length >= 0) {
+			joueur.add(b);
+			nbCasesJoueur = nbCasesJoueur - b.vie.length;
+			return true;
+		}
+		return false;
+	}
+
+	public void ajouterBotRand() {
+		while (nbCasesBot > 0) {
+			int r = (int) (Math.random() * (5 - 2));
+			Boat b = Boat.factory(1, r);
+			if (nbCasesBot - b.vie.length >= 0) {
+				bot.add(b);
+				nbCasesBot = nbCasesBot - b.vie.length;
+
+			}
+
+		}
+
+		botPlaceAlea();
+	}
+
 	public Map() {
 		grilleJoueur = new Case[10][10];
 		grilleBot = new Case[10][10];

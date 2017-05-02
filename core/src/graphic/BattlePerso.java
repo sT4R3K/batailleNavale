@@ -12,8 +12,10 @@ import com.badlogic.gdx.utils.viewport.Viewport;
 
 import IA.Aleatoire;
 import IA.Bot;
+import IA.Croix;
 import IA.Difficile;
 import graphic.Battle.alea;
+import graphic.Battle.croix;
 import graphic.Battle.curr;
 import graphic.Battle.diff;
 import graphic.Battle.old;
@@ -36,13 +38,17 @@ public class BattlePerso extends GraphBattle {
 
 	TextButton setAlea;
 	TextButton setDiff;
+	TextButton setCroix;
 
 	TextButton next;
+	TextButton suite;
 
 	boolean epoque = false;
 	boolean diff = false;
 
 	boolean suivant = false;
+
+	boolean go = false;
 
 	public BattlePerso(SpriteBatch sb, Stage stage, Viewport vp, Game game, OrthographicCamera camera) {
 		super(sb, stage, vp, game, camera);
@@ -56,6 +62,16 @@ public class BattlePerso extends GraphBattle {
 		decJ = new TextButton("-", Factory.skin);
 		decB = new TextButton("-", Factory.skin);
 		next = new TextButton("suivant", Factory.skin);
+		suite = new TextButton("suivant", Factory.skin);
+		setCroix = new TextButton("Normale", Factory.skin);
+
+		un = new TextButton("Normale", Factory.skin);
+		deux = new TextButton("deux", Factory.skin);
+		trois = new TextButton("trois", Factory.skin);
+		quatre = new TextButton("quatre", Factory.skin);
+		cinq = new TextButton("cinq", Factory.skin);
+
+		setCroix.addListener(new croix());
 
 		setOld.addListener(new old());
 		setCurrent.addListener(new curr());
@@ -66,17 +82,33 @@ public class BattlePerso extends GraphBattle {
 		decJ.addListener(new decj());
 		decB.addListener(new decb());
 		next.addListener(new next());
+		suite.addListener(new go());
+
+		un.addListener(new un());
+		deux.addListener(new deux());
+		trois.addListener(new trois());
+		quatre.addListener(new quatre());
+		cinq.addListener(new cinq());
+
+		// stage.addActor(un);
+		stage.addActor(deux);
+		stage.addActor(trois);
+		stage.addActor(quatre);
+		stage.addActor(cinq);
 
 		stage.addActor(setOld);
 		stage.addActor(setCurrent);
 		stage.addActor(setAlea);
 		stage.addActor(setDiff);
 
+		stage.addActor(setCroix);
+
 		stage.addActor(next);
 		stage.addActor(incJ);
 		stage.addActor(incB);
 		stage.addActor(decJ);
 		stage.addActor(decB);
+		stage.addActor(suite);
 
 		for (Actor a : stage.getActors()) {
 			a.setVisible(false);
@@ -89,7 +121,13 @@ public class BattlePerso extends GraphBattle {
 		incB.setVisible(true);
 		decJ.setVisible(true);
 		decB.setVisible(true);
+
 		next.setVisible(true);
+
+		stage.getBatch().begin();
+		Factory.font.draw(stage.getBatch(), "Selectionner le nombre de cases composant vos navires",
+				stage.getWidth() / 8, stage.getHeight() / 3);
+		stage.getBatch().end();
 
 		incJ.setSize(incJ.getText().toString().length() * (Factory.largeur()), Factory.hauteur());
 		incJ.setPosition(stage.getWidth() / 5, stage.getHeight() * 3 / 4);
@@ -116,6 +154,83 @@ public class BattlePerso extends GraphBattle {
 
 	}
 
+	void azerty() {
+
+		stage.getBatch().begin();
+		Factory.font.draw(stage.getBatch(), "Selectionner les navires composants votre flotte "+gear.map.nbCasesJoueur+" case restantes",
+				stage.getWidth() / 8, stage.getHeight() / 3);
+		stage.getBatch().end();
+
+		for (Actor a : stage.getActors()) {
+			a.setVisible(false);
+		}
+
+		if (gear.map.joueur.size() > 0)
+			suite.setVisible(true);
+
+		if (gear.map.nbCasesJoueur > 4) {
+			cinq.setVisible(true);
+		}
+		if (gear.map.nbCasesJoueur > 3) {
+			quatre.setVisible(true);
+		}
+		if (gear.map.nbCasesJoueur > 2) {
+			trois.setVisible(true);
+		}
+		if (gear.map.nbCasesJoueur > 1) {
+			deux.setVisible(true);
+		}
+
+		deux.setSize(deux.getText().toString().length() * (Factory.largeur() / 2), Factory.hauteur());
+		deux.setPosition(stage.getWidth() / 2 - next.getWidth() / 2, stage.getHeight() * 5 / 6);
+
+		trois.setSize(trois.getText().toString().length() * (Factory.largeur() / 2), Factory.hauteur());
+		trois.setPosition(stage.getWidth() / 2 - next.getWidth() / 2, stage.getHeight() * 4 / 6);
+
+		quatre.setSize(quatre.getText().toString().length() * (Factory.largeur() / 2), Factory.hauteur());
+		quatre.setPosition(stage.getWidth() / 2 - next.getWidth() / 2, stage.getHeight() * 3 / 6);
+
+		cinq.setSize(cinq.getText().toString().length() * (Factory.largeur() / 2), Factory.hauteur());
+		cinq.setPosition(stage.getWidth() / 2 - next.getWidth() / 2, stage.getHeight() * 2 / 6);
+
+		suite.setSize(suite.getText().toString().length() * (Factory.largeur() / 2), Factory.hauteur());
+		suite.setPosition(stage.getWidth() / 2 - next.getWidth() / 2, stage.getHeight() / 6);
+		stage.draw();
+	}
+
+	void set(TextButton but, TextButton butt, TextButton buttt) {
+
+		but.setVisible(true);
+		butt.setVisible(true);
+		buttt.setVisible(true);
+
+		but.setSize(but.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
+		butt.setSize(butt.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
+		buttt.setSize(butt.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
+
+		but.setPosition((stage.getWidth() / 2) - but.getWidth() / 2, stage.getHeight() / 2 + 2 * Factory.hauteur());
+		butt.setPosition((stage.getWidth() / 2) - butt.getWidth() / 2, stage.getHeight() / 2);
+		buttt.setPosition((stage.getWidth() / 2) - butt.getWidth() / 2, stage.getHeight() / 2 - 2 * Factory.hauteur());
+
+		stage.draw();
+
+	}
+
+	void set(TextButton but, TextButton butt) {
+
+		but.setVisible(true);
+		butt.setVisible(true);
+
+		but.setSize(but.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
+		butt.setSize(butt.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
+
+		but.setPosition((stage.getWidth() / 2) - but.getWidth() / 2, stage.getHeight() / 2 + Factory.hauteur());
+		butt.setPosition((stage.getWidth() / 2) - butt.getWidth() / 2, stage.getHeight() / 2 - Factory.hauteur());
+
+		stage.draw();
+
+	}
+
 	public void render() {
 
 		vp.update(Factory.width(), Factory.height(), true);
@@ -125,31 +240,36 @@ public class BattlePerso extends GraphBattle {
 		vp.update(Factory.width(), Factory.height());
 
 		if (suivant) {
-			if (epoque) {
-				if (diff) {
-					Gdx.input.setCursorCatched(true);
-					tuto();
-					vp.update(Factory.width(), Factory.height());
-					if (!gear.placement) {
-						hud();
-						if (gear.map.tourJoueur) {
-							this.joueur();
-							Gdx.input.setInputProcessor(stage);
+			if (go) {
+				if (epoque) {
+					if (diff) {
+						Gdx.input.setCursorCatched(true);
+						tuto();
+						vp.update(Factory.width(), Factory.height());
+						if (!gear.placement) {
+							hud();
+							if (gear.map.tourJoueur) {
+								this.joueur();
+								Gdx.input.setInputProcessor(stage);
+							} else {
+								gear.tourOrdinateur();
+								this.ordi();
+							}
 						} else {
-							gear.tourOrdinateur();
-							this.ordi();
+							this.installation();
+							hud2();
 						}
+						load();
 					} else {
-						this.installation();
-						hud2();
+						set(setAlea, setCroix, setDiff);
 					}
-					load();
 				} else {
-					// set(setAlea, setDiff);
+					set(setOld, setCurrent);
 				}
 			} else {
-				// set(setOld, setCurrent);
+				azerty();
 			}
+
 		} else {
 			personnal();
 		}
@@ -244,6 +364,7 @@ public class BattlePerso extends GraphBattle {
 			diff = true;
 			setAlea.setVisible(false);
 			setDiff.setVisible(false);
+			setCroix.setVisible(false);
 		}
 	}
 
@@ -253,6 +374,7 @@ public class BattlePerso extends GraphBattle {
 			gear.bot = new Bot(new Difficile());
 			setAlea.setVisible(false);
 			setDiff.setVisible(false);
+			setCroix.setVisible(false);
 			diff = true;
 		}
 	}
@@ -260,7 +382,65 @@ public class BattlePerso extends GraphBattle {
 	public class next extends ClickListener {
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
+			gear.map.nbCasesJoueur = limitJ;
+			gear.map.nbCasesBot = limitB;
 			suivant = true;
+		}
+	}
+
+	public class go extends ClickListener {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			next.setVisible(false);
+			suite.setVisible(false);
+			go = true;
+			gear.map.ajouterBotRand();
+		}
+	}
+
+	public class croix extends ClickListener {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			gear.bot = new Bot(new Croix());
+			setAlea.setVisible(false);
+			setCroix.setVisible(false);
+			setDiff.setVisible(false);
+			diff = true;
+		}
+	}
+
+	public class un extends ClickListener {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			gear.map.ajouter(Boat.factory(1, 1));
+		}
+	}
+
+	public class deux extends ClickListener {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			gear.map.ajouter(Boat.factory(1, 2));
+		}
+	}
+
+	public class trois extends ClickListener {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			gear.map.ajouter(Boat.factory(1, 3));
+		}
+	}
+
+	public class quatre extends ClickListener {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			gear.map.ajouter(Boat.factory(1, 4));
+		}
+	}
+
+	public class cinq extends ClickListener {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			gear.map.ajouter(Boat.factory(1, 5));
 		}
 	}
 }
