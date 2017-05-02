@@ -1,9 +1,11 @@
 package IA;
 
+import java.io.Serializable;
+
 import map.Case;
 import map.Map;
 
-public class Difficile implements Strategie {
+public class Difficile implements Strategie, Serializable  {
 
 	/**
 	 * 

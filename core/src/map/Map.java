@@ -21,6 +21,7 @@ public class Map implements Serializable {
 	int sortieX = 2;
 	int supperposition = 3;
 	public boolean tourJoueur = true;
+	public boolean sauvegarde = false;
 
 	public Map() {
 		grilleJoueur = new Case[10][10];

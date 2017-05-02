@@ -323,6 +323,7 @@ public class Start extends ApplicationAdapter {
 	public class saveVal extends ClickListener {
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
+			app.gear.map.sauvegarde = true;
 			SaveManager.saveToFile(app.gear, field.getText().toString());
 			field.setVisible(false);
 			cas = 1;

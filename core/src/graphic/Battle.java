@@ -74,6 +74,11 @@ public class Battle extends GraphBattle {
 		// Factory.font.draw(batch, "bsgnsfg", stage.getWidth() / 2,
 		// stage.getHeight() / 2);
 
+		if (gear.map.sauvegarde) {
+			epoque = true;
+			diff = true;
+		}
+
 		if (epoque) {
 			if (diff) {
 				Gdx.input.setCursorCatched(true);
