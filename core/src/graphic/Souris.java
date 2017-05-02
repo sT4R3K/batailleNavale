@@ -100,7 +100,7 @@ public class Souris extends Entity {
 		// debug();
 		// }
 		
-		Gdx.input.setCursorCatched(true);
+		
 
 		vp.update(Factory.width(), Factory.height(), true);
 		camera.viewportWidth = Factory.width();

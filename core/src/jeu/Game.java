@@ -20,7 +20,7 @@ public abstract class Game implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	public Map map;
-	protected Bot bot = new Bot(new Difficile());
+	public Bot bot = new Bot(new Difficile());
 	public boolean placement = true;
 
 	public static int tour = 0;
