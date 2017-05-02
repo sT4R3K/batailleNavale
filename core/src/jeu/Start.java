@@ -244,10 +244,23 @@ public class Start extends ApplicationAdapter {
 
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
-			System.out.println("bidule");
+			// System.out.println("bidule");
 			if (app == null) {
 				app = new BatailleNavale();
 				app.create();
+			}
+			cas = 2;
+		}
+	};
+	
+	public class perso extends ClickListener {
+
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			// System.out.println("bidule");
+			if (app == null) {
+				app = new BatailleNavale();
+				app.createPerso();
 			}
 			cas = 2;
 		}
@@ -278,18 +291,7 @@ public class Start extends ApplicationAdapter {
 		}
 	};
 
-	public class perso extends ClickListener {
-
-		@Override
-		public void clicked(InputEvent event, float x, float y) {
-			System.out.println("bidule");
-			if (app == null) {
-				app = new BatailleNavale();
-				app.createPerso();
-			}
-			cas = 2;
-		}
-	};
+	
 
 	public class save extends ClickListener {
 		@Override

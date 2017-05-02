@@ -24,4 +24,18 @@ public abstract class Boat implements Serializable {
 			vie[z] = i;
 		}
 	}
+	
+	public static Boat factory(int epoque, int taille) {
+		switch (epoque) {
+
+		case 2:
+			Boat b = new Current(taille);
+			return b;
+
+		default:
+			Boat bb = new Old(taille);
+			return bb;
+
+		}
+	}
 }

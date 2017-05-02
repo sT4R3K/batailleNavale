@@ -22,6 +22,7 @@ public abstract class Game implements Serializable {
 	public Map map;
 	public Bot bot = new Bot(new Difficile());
 	public boolean placement = true;
+	public boolean endCreation = false;;
 
 	public static int tour = 0;
 

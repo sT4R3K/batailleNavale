@@ -9,8 +9,11 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
+import gestionSauvegarde.PersoGame;
+import gestionSauvegarde.PersonnalGame;
 import gestionSauvegarde.SimpleGame;
 import graphic.Battle;
+import graphic.BattlePerso;
 import graphic.Entity;
 import graphic.Souris;
 import graphic.factory.Factory;
@@ -42,13 +45,13 @@ public class BatailleNavale extends ApplicationAdapter {
 	}
 	
 	public void createPerso() {
-		gear = new SimpleGame();
+		gear = new PersonnalGame();
 		batch = new SpriteBatch();
 		map = gear.map;
 		camera = new OrthographicCamera(Factory.width(), Factory.height());
 		vp = new ScreenViewport();
 		stage = new Stage();
-		monde = new Battle(batch, stage, vp, gear, camera);
+		monde = new BattlePerso(batch, stage, vp, gear, camera);
 		souris = new Souris(batch, stage, vp, gear, camera);
 	}
 
