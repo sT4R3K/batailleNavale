@@ -1,0 +1,58 @@
+package IA;
+
+import java.io.Serializable;
+
+import map.Case;
+import map.Map;
+import java.util.Random;
+
+public class LeftSize implements Strategie, Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4L;
+
+	@Override
+	public int[] doComputePosion() {
+		return null;
+	}
+
+	@Override
+	public void degat(Map m) {
+		Map map = m;
+		Case c = null;
+		boolean selected = false;
+		int saut = map.getTailleMoinsGrandeBateauHumain();
+		int ligne,index;
+		//on tire la ligne au hasard		
+		Random r = new Random();
+		while(!selected)	
+			ligne = r.nextInt(m.length);
+			index = 0;
+			while(index ==0 && i  < map.grilleJoueur[ligne].length){
+				if(map.grilleJoueur[ligne][i].reveal())
+					index = i;
+				i++;
+			}	
+
+			if(ligne - saut >= 0 && !map.grilleJoueur[ligne-saut][index].reveal()){
+				ligne = ligne - saut;
+				selected = true;
+			}else if(index + saut < map.grilleJoueur[ligne].length && !map.grilleJoueur[ligne-saut][index].reveal()){
+				index = index +saut;
+				selected = true;
+			}
+		}
+		
+		
+		c = map.grilleJoueur[ligne][index];
+		
+		// Choisir une case voisine à une case déjà coulée
+		
+		
+		map.infligerDegat(c);
+		
+	}
+
+}

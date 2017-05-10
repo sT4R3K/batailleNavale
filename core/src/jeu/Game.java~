@@ -2,8 +2,15 @@ package jeu;
 
 import java.io.Serializable;
 
-import IA.*;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
+import IA.Aleatoire;
+import IA.Bot;
+import IA.Croix;
+import IA.Difficile;
+import map.Case;
+import map.Current;
 import map.Map;
 
 public abstract class Game implements Serializable {
@@ -13,7 +20,7 @@ public abstract class Game implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	public Map map;
-	public Bot bot = new Bot(new SearchAndSink());
+	public Bot bot = new Bot(new Difficile());
 	public boolean placement = true;
 	public boolean endCreation = false;;
 

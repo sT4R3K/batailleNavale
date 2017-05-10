@@ -44,7 +44,7 @@ public class Difficile implements Strategie, Serializable  {
 			}
 		}
 		
-		// Sinon choisir une case aléatoirement
+		// Sinon choisir une case alï¿½atoirement
 		else {
 			int x = (int) (Math.random() * 10);
 			int y = (int) (Math.random() * 10);

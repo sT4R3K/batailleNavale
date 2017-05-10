@@ -6,7 +6,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 
-public class MenuEpoque extends ApplicationAdapter {
+public class 	MenuEpoque extends ApplicationAdapter {
 
 	SpriteBatch batch;
 	Stage stage;

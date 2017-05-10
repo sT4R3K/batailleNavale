@@ -239,15 +239,13 @@ public class Map implements Serializable {
 		return 0;
 	}
 
-	public int getTailleMoinsGrandeBateauHumain(){
-		int max = 11;		
-		for(int i = 0; i< grilleJoueur.length;i++){
-			for(int j = 0; j < grilleJoueur[i].length;j++) {
-				if (max > grilleJoueur[i][j].getBoatSize())
-					max = grilleJoueur[i][j].getBoatSize();
-			}
+	public int getTaillePlusGrandBateauHumain(){
+		int max = 0;		
+		for(Boat b : joueur){
+			if(max < b.size())
+				max= b.size();
 		}
-		return max;
+		retun max;
 	}
 
 	public void afficherJoueur() {

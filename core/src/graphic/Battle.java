@@ -1,5 +1,6 @@
 package graphic;
 
+import IA.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -10,10 +11,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.Viewport;
 
-import IA.Aleatoire;
-import IA.Bot;
-import IA.Croix;
-import IA.Difficile;
 import graphic.factory.Factory;
 import jeu.Game;
 import map.Boat;
@@ -29,6 +26,7 @@ public class Battle extends GraphBattle {
 	TextButton setAlea;
 	TextButton setCroix;
 	TextButton setDiff;
+	TextButton setSpecial;
 
 	public Battle(SpriteBatch sb, Stage stage, Viewport vp, Game game, OrthographicCamera camera) {
 		super(sb, stage, vp, game, camera);
@@ -39,18 +37,21 @@ public class Battle extends GraphBattle {
 		setAlea = new TextButton("Facile", Factory.skin);
 		setCroix = new TextButton ("Normale", Factory.skin);
 		setDiff = new TextButton("Difficile", Factory.skin);
+		setSpecial = new TextButton("Special",Factory.skin);
 
 		setOld.addListener(new old());
 		setCurrent.addListener(new curr());
 		setAlea.addListener(new alea());
 		setCroix.addListener(new croix());
 		setDiff.addListener(new diff());
+		setSpecial.addListener(new sas());
 
 		stage.addActor(setOld);
 		stage.addActor(setCurrent);
 		stage.addActor(setAlea);
 		stage.addActor(setCroix);
 		stage.addActor(setDiff);
+		stage.addActor(setSpecial);
 
 		for (Actor a : stage.getActors()) {
 			a.setVisible(false);
@@ -59,19 +60,22 @@ public class Battle extends GraphBattle {
 		Gdx.input.setInputProcessor(stage);
 	}
 	
-	void set(TextButton but, TextButton butt, TextButton buttt) {
+	void set(TextButton but, TextButton butt, TextButton buttt, TextButton butttt) {
 
 		but.setVisible(true);
 		butt.setVisible(true);
 		buttt.setVisible(true);
+		butttt.setVisible(true);
 
 		but.setSize(but.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
 		butt.setSize(butt.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
 		buttt.setSize(butt.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
+		butttt.setSize(butt.getText().toString().length() * (Factory.largeur() / 3), Factory.hauteur() * 2);
 
 		but.setPosition((stage.getWidth() / 2) - but.getWidth() / 2, stage.getHeight() / 2 + 2*Factory.hauteur());
 		butt.setPosition((stage.getWidth() / 2) - butt.getWidth() / 2, stage.getHeight() / 2 );
 		buttt.setPosition((stage.getWidth() / 2) - butt.getWidth() / 2, stage.getHeight() / 2 - 2*Factory.hauteur());
+		butttt.setPosition((stage.getWidth() / 2) - butt.getWidth() / 2, stage.getHeight() / 2 - 4*Factory.hauteur());
 
 		stage.draw();
 
@@ -123,7 +127,7 @@ public class Battle extends GraphBattle {
 				}
 				load();
 			} else {
-				set(setAlea, setCroix,setDiff);
+				set(setAlea, setCroix,setDiff,setSpecial);
 			}
 		} else {
 			set(setOld, setCurrent);
@@ -171,6 +175,7 @@ public class Battle extends GraphBattle {
 			setAlea.setVisible(false);
 			setCroix.setVisible(false);
 			setDiff.setVisible(false);
+			setSpecial.setVisible(false);
 		}
 	}
 
@@ -181,10 +186,23 @@ public class Battle extends GraphBattle {
 			setAlea.setVisible(false);
 			setCroix.setVisible(false);
 			setDiff.setVisible(false);
+			setSpecial.setVisible(false);
 			diff = true;
 		}
 	}
-	
+
+	public class sas extends ClickListener {
+		@Override
+		public void clicked(InputEvent event, float x, float y) {
+			gear.bot = new Bot(new SearchAndSink());
+			setAlea.setVisible(false);
+			setCroix.setVisible(false);
+			setDiff.setVisible(false);
+			setSpecial.setVisible(false);
+			diff = true;
+		}
+	}
+
 	public class croix extends ClickListener {
 		@Override
 		public void clicked(InputEvent event, float x, float y) {
@@ -192,6 +210,7 @@ public class Battle extends GraphBattle {
 			setAlea.setVisible(false);
 			setCroix.setVisible(false);
 			setDiff.setVisible(false);
+			setSpecial.setVisible(false);
 			diff = true;
 		}
 	}

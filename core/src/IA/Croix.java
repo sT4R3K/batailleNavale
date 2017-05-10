@@ -24,7 +24,7 @@ public class Croix implements Strategie, Serializable {
 		Case c = null;
 		boolean selected = false;
 		
-		// Choisir une case voisine à une case déjà coulée
+		// Choisir une case voisine ï¿½ une case dï¿½jï¿½ coulï¿½e
 		double r = Math.random();
 		boolean left_to_right = (r<0.5)?true:false;
 		r = Math.random();
@@ -61,7 +61,7 @@ public class Croix implements Strategie, Serializable {
 				}
 			}
 		
-		// Sinon choisir aléatoirement
+		// Sinon choisir alï¿½atoirement
 		if (!selected) {
 			int x = (int) (Math.random() * 10);
 			int y = (int) (Math.random() * 10);

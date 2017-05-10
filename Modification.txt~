@@ -1,0 +1,12 @@
+Modification :
+- Ajout de la classe SearchAndSink qui est la nouvelle stratégie
+- Ajout du champ argument setSpecial qui est un TextButton dans la classe Battle
+- Modification du Constructeur afin d'initialiser le bouton
+- Modification de la fonction void set(TextButton but, TextButton butt, TextButton buttt) en void set(TextButton but, TextButton butt, TextButton buttt, TextButton butttt) afin de pouvoir placer mon bouton sur l'interface.
+- Dans la classe Battle ajout de la classe sas qui est un clicklistener permettant de set la strategie en cours avec SearchAndSink
+- Ajout dans les classes diff,alea et croix la ligne "setSpecial.setVisible(false);" Afin de supprimer le bouton de l'écran
+
+Remarque :
+Quelque commentaire et d'autre nom pour les champs aideraient un peu.
+L'Ensemble est rapide a prendre en main.
+Temps de travail : 2h

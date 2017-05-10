@@ -28,6 +28,12 @@ public class Case implements Serializable {
 		reveal = false;
 	}
 
+	public int getBoatSize(){
+		if(boat == null)
+			return 11;
+		return boat.size();
+	}
+
 	public String toString() {
 
 		// if (zone > boat.vie.length)

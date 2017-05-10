@@ -11,10 +11,6 @@ public abstract class Boat implements Serializable {
 		vie = new int[nbCase];
 	}
 
-	public int size(){
-		return vie.length;
-	}	
-
 	public void hit(int zone) {
 		vie[zone]--;
 	}
@@ -27,14 +23,6 @@ public abstract class Boat implements Serializable {
 		for (int z = 0; z < vie.length; z++) {
 			vie[z] = i;
 		}
-	}
-
-	public boolean isDead(){
-		for(int i = 0; i < vie.length;i++){
-			if(vie[i] > 0)
-				return false;
-		}
-		return true;
 	}
 	
 	public static Boat factory(int epoque, int taille) {

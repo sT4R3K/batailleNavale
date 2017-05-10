@@ -1,4 +1,4 @@
 org.gradle.daemon=true
 org.gradle.jvmargs=-Xms128m -Xmx1500m
 org.gradle.configureondemand=true
-org.gradle.java.home=/home/brice/Documents/java/jdk1.8.0_65
+org.gradle.java.home=C/home/brice/Documents/java/jdk1.8.0_65
